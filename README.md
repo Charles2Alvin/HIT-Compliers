@@ -27,7 +27,7 @@
 （7）	处理来自Lexer词法分析器的输入，判断语法的正确性。
 
 
-####文法的定义：
+#### 文法的定义：
 start -> classes
 ##### 类
 classes -> classes classes
