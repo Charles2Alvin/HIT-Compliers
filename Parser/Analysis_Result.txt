@@ -1,0 +1,1816 @@
+Read symbol	class
+		shift	class	and push state	3
+		State stack:	[0, 3]
+		Symbol stack:	['$', 'class']
+Read symbol	IDN
+		shift	IDN	and push state	5
+		State stack:	[0, 3, 5]
+		Symbol stack:	['$', 'class', 'IDN']
+Read symbol	{
+		shift	{	and push state	6
+		State stack:	[0, 3, 5, 6]
+		Symbol stack:	['$', 'class', 'IDN', '{']
+Read symbol	private
+		shift	private	and push state	14
+		State stack:	[0, 3, 5, 6, 14]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'private']
+Read symbol	int
+		reduce using the production	access	['private']
+		push state	9
+		State stack:	[0, 3, 5, 6, 9]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 9, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'int']
+Read symbol	[
+		reduce using the production	type	['int']
+		push state	36
+		State stack:	[0, 3, 5, 6, 9, 36]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'type']
+Read symbol	[
+		shift	[	and push state	54
+		State stack:	[0, 3, 5, 6, 9, 36, 54]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'type', '[']
+Read symbol	]
+		shift	]	and push state	80
+		State stack:	[0, 3, 5, 6, 9, 36, 54, 80]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'type', '[', ']']
+Read symbol	IDN
+		reduce using the production	T	['type', '[', ']']
+		push state	11
+		State stack:	[0, 3, 5, 6, 9, 11]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	52
+		State stack:	[0, 3, 5, 6, 9, 11, 52]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'T', 'IDN']
+Read symbol	;
+		shift	;	and push state	77
+		State stack:	[0, 3, 5, 6, 9, 11, 52, 77]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'T', 'IDN', ';']
+Read symbol	public
+		reduce using the production	D	['T', 'IDN', ';']
+		push state	35
+		State stack:	[0, 3, 5, 6, 9, 35]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'access', 'D']
+Read symbol	public
+		reduce using the production	field	['access', 'D']
+		push state	7
+		State stack:	[0, 3, 5, 6, 7]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field']
+Read symbol	public
+		shift	public	and push state	13
+		State stack:	[0, 3, 5, 6, 7, 13]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'public']
+Read symbol	void
+		reduce using the production	access	['public']
+		push state	23
+		State stack:	[0, 3, 5, 6, 7, 23]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access']
+Read symbol	void
+		shift	void	and push state	30
+		State stack:	[0, 3, 5, 6, 7, 23, 30]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'void']
+Read symbol	IDN
+		reduce using the production	type	['void']
+		push state	56
+		State stack:	[0, 3, 5, 6, 7, 23, 56]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type']
+Read symbol	IDN
+		shift	IDN	and push state	59
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN']
+Read symbol	(
+		shift	(	and push state	83
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'int']
+Read symbol	[
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'type']
+Read symbol	[
+		shift	[	and push state	54
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 40, 54]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'type', '[']
+Read symbol	]
+		shift	]	and push state	80
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 40, 54, 80]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'type', '[', ']']
+Read symbol	IDN
+		reduce using the production	T	['type', '[', ']']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'T', 'IDN']
+Read symbol	,
+		reduce using the production	arg	['T', 'IDN']
+		push state	134
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 134]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'arg']
+Read symbol	,
+		reduce using the production	args	['arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	,
+		shift	,	and push state	216
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'T', 'IDN']
+Read symbol	,
+		reduce using the production	arg	['T', 'IDN']
+		push state	295
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 295]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'arg']
+Read symbol	,
+		reduce using the production	args	['args', ',', 'arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	,
+		shift	,	and push state	216
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'T', 'IDN']
+Read symbol	)
+		reduce using the production	arg	['T', 'IDN']
+		push state	295
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 216, 295]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ',', 'arg']
+Read symbol	)
+		reduce using the production	args	['args', ',', 'arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	)
+		shift	)	and push state	219
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')']
+Read symbol	{
+		shift	{	and push state	307
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{']
+Read symbol	if
+		shift	if	and push state	304
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if']
+Read symbol	(
+		shift	(	and push state	381
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(']
+Read symbol	IDN
+		shift	IDN	and push state	115
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 115]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'IDN']
+Read symbol	<
+		reduce using the production	E	['IDN']
+		push state	112
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 112]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'E']
+Read symbol	<
+		shift	<	and push state	178
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 112, 178]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'E', '<']
+Read symbol	IDN
+		reduce using the production	relop	['<']
+		push state	175
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 112, 175]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'E', 'relop']
+Read symbol	IDN
+		shift	IDN	and push state	261
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 112, 175, 261]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'E', 'relop', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	259
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 112, 175, 259]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'E', 'relop', 'E']
+Read symbol	)
+		reduce using the production	B	['E', 'relop', 'E']
+		push state	434
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B']
+Read symbol	)
+		shift	)	and push state	462
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')']
+Read symbol	{
+		shift	{	and push state	478
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	299
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	375
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN']
+Read symbol	=
+		shift	=	and push state	429
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN']
+Read symbol	(
+		shift	(	and push state	144
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(']
+Read symbol	IDN
+		shift	IDN	and push state	104
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 104]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	102
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 102]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'E']
+Read symbol	,
+		reduce using the production	param	['E']
+		push state	224
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',', 'E']
+Read symbol	,
+		reduce using the production	param	['param', ',', 'E']
+		push state	224
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ',', 'E']
+Read symbol	)
+		reduce using the production	param	['param', ',', 'E']
+		push state	224
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param']
+Read symbol	)
+		shift	)	and push state	310
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 88, 144, 224, 310]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'IDN', '(', 'param', ')']
+Read symbol	;
+		reduce using the production	call	['IDN', '(', 'param', ')']
+		push state	85
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 85]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'call']
+Read symbol	;
+		reduce using the production	E	['call']
+		push state	459
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 459]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'E']
+Read symbol	;
+		shift	;	and push state	477
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 299, 375, 429, 459, 477]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'T', 'IDN', '=', 'E', ';']
+Read symbol	IDN
+		reduce using the production	D	['T', 'IDN', '=', 'E', ';']
+		push state	298
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 298]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'D']
+Read symbol	IDN
+		reduce using the production	P	['D']
+		push state	488
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN']
+Read symbol	(
+		shift	(	and push state	67
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(']
+Read symbol	IDN
+		shift	IDN	and push state	104
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 104]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	102
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 102]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'E']
+Read symbol	,
+		reduce using the production	param	['E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	,
+		reduce using the production	param	['param', ',', 'E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	)
+		reduce using the production	param	['param', ',', 'E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	)
+		shift	)	and push state	162
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 162]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ')']
+Read symbol	;
+		reduce using the production	call	['IDN', '(', 'param', ')']
+		push state	301
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 301]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'call']
+Read symbol	;
+		shift	;	and push state	377
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 301, 377]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'call', ';']
+Read symbol	IDN
+		reduce using the production	S	['call', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'S']
+Read symbol	IDN
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'P']
+Read symbol	IDN
+		reduce using the production	P	['P', 'P']
+		push state	488
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN']
+Read symbol	(
+		shift	(	and push state	67
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(']
+Read symbol	IDN
+		shift	IDN	and push state	104
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 104]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	102
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 102]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'E']
+Read symbol	,
+		reduce using the production	param	['E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	+
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	+
+		shift	+	and push state	322
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243, 322]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E', '+']
+Read symbol	digit
+		shift	digit	and push state	248
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243, 322, 248]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E', '+', 'digit']
+Read symbol	,
+		reduce using the production	E	['digit']
+		push state	389
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243, 322, 389]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E', '+', 'E']
+Read symbol	,
+		reduce using the production	E	['E', '+', 'E']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	,
+		reduce using the production	param	['param', ',', 'E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	)
+		reduce using the production	param	['param', ',', 'E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	)
+		shift	)	and push state	162
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 303, 67, 101, 162]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'IDN', '(', 'param', ')']
+Read symbol	;
+		reduce using the production	call	['IDN', '(', 'param', ')']
+		push state	301
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 301]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'call']
+Read symbol	;
+		shift	;	and push state	377
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 301, 377]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'call', ';']
+Read symbol	}
+		reduce using the production	S	['call', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', 'P']
+Read symbol	}
+		reduce using the production	P	['P', 'P']
+		push state	488
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	497
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 304, 381, 434, 462, 478, 488, 497]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'if', '(', 'B', ')', '{', 'P', '}']
+Read symbol	}
+		reduce using the production	S	['if', '(', 'B', ')', '{', 'P', '}']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	437
+		State stack:	[0, 3, 5, 6, 7, 23, 56, 59, 83, 138, 219, 307, 384, 437]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+Read symbol	public
+		reduce using the production	method	['access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+		push state	22
+		State stack:	[0, 3, 5, 6, 7, 22]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method']
+Read symbol	public
+		shift	public	and push state	13
+		State stack:	[0, 3, 5, 6, 7, 22, 13]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'public']
+Read symbol	int
+		reduce using the production	access	['public']
+		push state	32
+		State stack:	[0, 3, 5, 6, 7, 22, 32]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access']
+Read symbol	int
+		shift	int	and push state	25
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 25]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	57
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type']
+Read symbol	IDN
+		shift	IDN	and push state	81
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN']
+Read symbol	(
+		shift	(	and push state	137
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'int']
+Read symbol	[
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'type']
+Read symbol	[
+		shift	[	and push state	54
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 40, 54]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'type', '[']
+Read symbol	]
+		shift	]	and push state	80
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 40, 54, 80]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'type', '[', ']']
+Read symbol	IDN
+		reduce using the production	T	['type', '[', ']']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T', 'IDN']
+Read symbol	,
+		reduce using the production	arg	['T', 'IDN']
+		push state	134
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 134]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'arg']
+Read symbol	,
+		reduce using the production	args	['arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	,
+		shift	,	and push state	216
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T', 'IDN']
+Read symbol	,
+		reduce using the production	arg	['T', 'IDN']
+		push state	295
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 295]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'arg']
+Read symbol	,
+		reduce using the production	args	['args', ',', 'arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	,
+		shift	,	and push state	216
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T', 'IDN']
+Read symbol	)
+		reduce using the production	arg	['T', 'IDN']
+		push state	295
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 295]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'arg']
+Read symbol	)
+		reduce using the production	args	['args', ',', 'arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	)
+		shift	)	and push state	219
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')']
+Read symbol	{
+		shift	{	and push state	307
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	299
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	375
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN']
+Read symbol	=
+		shift	=	and push state	429
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN']
+Read symbol	;
+		reduce using the production	E	['IDN']
+		push state	459
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E']
+Read symbol	;
+		shift	;	and push state	477
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459, 477]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E', ';']
+Read symbol	IDN
+		reduce using the production	D	['T', 'IDN', '=', 'E', ';']
+		push state	298
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 298]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'D']
+Read symbol	IDN
+		reduce using the production	P	['D']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN']
+Read symbol	(
+		shift	(	and push state	67
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(']
+Read symbol	IDN
+		shift	IDN	and push state	104
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 104]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'IDN']
+Read symbol	,
+		reduce using the production	E	['IDN']
+		push state	102
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 102]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'E']
+Read symbol	,
+		reduce using the production	param	['E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	,
+		shift	,	and push state	163
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101, 163]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param', ',']
+Read symbol	IDN
+		shift	IDN	and push state	245
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101, 163, 245]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param', ',', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	243
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101, 163, 243]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param', ',', 'E']
+Read symbol	)
+		reduce using the production	param	['param', ',', 'E']
+		push state	101
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param']
+Read symbol	)
+		shift	)	and push state	162
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 67, 101, 162]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '(', 'param', ')']
+Read symbol	;
+		reduce using the production	call	['IDN', '(', 'param', ')']
+		push state	301
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 301]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'call']
+Read symbol	;
+		shift	;	and push state	377
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 301, 377]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'call', ';']
+Read symbol	int
+		reduce using the production	S	['call', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'S']
+Read symbol	int
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	int
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	299
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	375
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN']
+Read symbol	=
+		shift	=	and push state	429
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'IDN']
+Read symbol	[
+		shift	[	and push state	145
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 88, 145]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 88, 145, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	226
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 88, 145, 226]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	311
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 88, 145, 226, 311]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'IDN', '[', 'E', ']']
+Read symbol	;
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	87
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 87]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'L']
+Read symbol	;
+		reduce using the production	E	['L']
+		push state	459
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 459]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'E']
+Read symbol	;
+		shift	;	and push state	477
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 299, 375, 429, 459, 477]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'T', 'IDN', '=', 'E', ';']
+Read symbol	while
+		reduce using the production	D	['T', 'IDN', '=', 'E', ';']
+		push state	298
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 298]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'D']
+Read symbol	while
+		reduce using the production	P	['D']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	while
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	while
+		shift	while	and push state	305
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while']
+Read symbol	(
+		shift	(	and push state	382
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(']
+Read symbol	IDN
+		shift	IDN	and push state	115
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 115]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'IDN']
+Read symbol	<
+		reduce using the production	E	['IDN']
+		push state	112
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 112]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'E']
+Read symbol	<
+		shift	<	and push state	178
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 112, 178]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'E', '<']
+Read symbol	IDN
+		reduce using the production	relop	['<']
+		push state	175
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 112, 175]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'E', 'relop']
+Read symbol	IDN
+		shift	IDN	and push state	261
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 112, 175, 261]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'E', 'relop', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	259
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 112, 175, 259]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'E', 'relop', 'E']
+Read symbol	)
+		reduce using the production	B	['E', 'relop', 'E']
+		push state	435
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B']
+Read symbol	)
+		shift	)	and push state	463
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')']
+Read symbol	{
+		shift	{	and push state	479
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{']
+Read symbol	while
+		shift	while	and push state	305
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while']
+Read symbol	(
+		shift	(	and push state	382
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(']
+Read symbol	IDN
+		shift	IDN	and push state	115
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 115]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'IDN']
+Read symbol	<
+		reduce using the production	E	['IDN']
+		push state	112
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 112]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'E']
+Read symbol	<
+		shift	<	and push state	178
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 112, 178]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'E', '<']
+Read symbol	IDN
+		reduce using the production	relop	['<']
+		push state	175
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 112, 175]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'E', 'relop']
+Read symbol	IDN
+		shift	IDN	and push state	261
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 112, 175, 261]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'E', 'relop', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	259
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 112, 175, 259]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'E', 'relop', 'E']
+Read symbol	)
+		reduce using the production	B	['E', 'relop', 'E']
+		push state	435
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B']
+Read symbol	)
+		shift	)	and push state	463
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')']
+Read symbol	{
+		shift	{	and push state	479
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'IDN']
+Read symbol	--
+		shift	--	and push state	71
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 303, 71]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'IDN', '--']
+Read symbol	;
+		reduce using the production	op	['--']
+		push state	379
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 303, 379]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'IDN', 'op']
+Read symbol	;
+		shift	;	and push state	432
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 303, 379, 432]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'IDN', 'op', ';']
+Read symbol	}
+		reduce using the production	S	['IDN', 'op', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	498
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 305, 382, 435, 463, 479, 489, 498]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'while', '(', 'B', ')', '{', 'P', '}']
+Read symbol	IDN
+		reduce using the production	S	['while', '(', 'B', ')', '{', 'P', '}']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'S']
+Read symbol	IDN
+		reduce using the production	P	['S']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN']
+Read symbol	[
+		shift	[	and push state	69
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	110
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 110]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	174
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 110, 174]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'E', ']']
+Read symbol	=
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	302
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L']
+Read symbol	=
+		shift	=	and push state	378
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN']
+Read symbol	[
+		shift	[	and push state	145
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	226
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 226]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	311
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 226, 311]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E', ']']
+Read symbol	;
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	87
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 87]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'L']
+Read symbol	;
+		reduce using the production	E	['L']
+		push state	431
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 431]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'E']
+Read symbol	;
+		shift	;	and push state	460
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 431, 460]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'E', ';']
+Read symbol	while
+		reduce using the production	S	['L', '=', 'E', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'S']
+Read symbol	while
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'P']
+Read symbol	while
+		reduce using the production	P	['P', 'P']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	while
+		shift	while	and push state	305
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while']
+Read symbol	(
+		shift	(	and push state	382
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(']
+Read symbol	IDN
+		shift	IDN	and push state	115
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 115]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'IDN']
+Read symbol	<
+		reduce using the production	E	['IDN']
+		push state	112
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 112]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'E']
+Read symbol	<
+		shift	<	and push state	178
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 112, 178]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'E', '<']
+Read symbol	IDN
+		reduce using the production	relop	['<']
+		push state	175
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 112, 175]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'E', 'relop']
+Read symbol	IDN
+		shift	IDN	and push state	261
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 112, 175, 261]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'E', 'relop', 'IDN']
+Read symbol	)
+		reduce using the production	E	['IDN']
+		push state	259
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 112, 175, 259]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'E', 'relop', 'E']
+Read symbol	)
+		reduce using the production	B	['E', 'relop', 'E']
+		push state	435
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B']
+Read symbol	)
+		shift	)	and push state	463
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')']
+Read symbol	{
+		shift	{	and push state	479
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'IDN']
+Read symbol	++
+		shift	++	and push state	70
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 303, 70]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'IDN', '++']
+Read symbol	;
+		reduce using the production	op	['++']
+		push state	379
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 303, 379]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'IDN', 'op']
+Read symbol	;
+		shift	;	and push state	432
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 303, 379, 432]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'IDN', 'op', ';']
+Read symbol	}
+		reduce using the production	S	['IDN', 'op', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	498
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 305, 382, 435, 463, 479, 489, 498]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', '}']
+Read symbol	IDN
+		reduce using the production	S	['while', '(', 'B', ')', '{', 'P', '}']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'S']
+Read symbol	IDN
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'P']
+Read symbol	IDN
+		reduce using the production	P	['P', 'P']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN']
+Read symbol	[
+		shift	[	and push state	69
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	110
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 110]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	174
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 303, 69, 110, 174]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'IDN', '[', 'E', ']']
+Read symbol	=
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	302
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L']
+Read symbol	=
+		shift	=	and push state	378
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN']
+Read symbol	[
+		shift	[	and push state	145
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	226
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 226]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	311
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 88, 145, 226, 311]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E', ']']
+Read symbol	;
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	87
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 87]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'L']
+Read symbol	;
+		reduce using the production	E	['L']
+		push state	431
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 431]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'E']
+Read symbol	;
+		shift	;	and push state	460
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 302, 378, 431, 460]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'L', '=', 'E', ';']
+Read symbol	}
+		reduce using the production	S	['L', '=', 'E', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', 'P']
+Read symbol	}
+		reduce using the production	P	['P', 'P']
+		push state	489
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	498
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 305, 382, 435, 463, 479, 489, 498]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'while', '(', 'B', ')', '{', 'P', '}']
+Read symbol	IDN
+		reduce using the production	S	['while', '(', 'B', ')', '{', 'P', '}']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'S']
+Read symbol	IDN
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	IDN
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN']
+Read symbol	[
+		shift	[	and push state	69
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	110
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	174
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110, 174]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E', ']']
+Read symbol	=
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	302
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L']
+Read symbol	=
+		shift	=	and push state	378
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN']
+Read symbol	;
+		reduce using the production	E	['IDN']
+		push state	431
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E']
+Read symbol	;
+		shift	;	and push state	460
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431, 460]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E', ';']
+Read symbol	}
+		reduce using the production	S	['L', '=', 'E', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	}
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	437
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 437]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+Read symbol	public
+		reduce using the production	method	['access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+		push state	31
+		State stack:	[0, 3, 5, 6, 7, 22, 31]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'method']
+Read symbol	public
+		reduce using the production	method	['method', 'method']
+		push state	22
+		State stack:	[0, 3, 5, 6, 7, 22]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method']
+Read symbol	public
+		shift	public	and push state	13
+		State stack:	[0, 3, 5, 6, 7, 22, 13]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'public']
+Read symbol	void
+		reduce using the production	access	['public']
+		push state	32
+		State stack:	[0, 3, 5, 6, 7, 22, 32]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access']
+Read symbol	void
+		shift	void	and push state	30
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 30]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'void']
+Read symbol	IDN
+		reduce using the production	type	['void']
+		push state	57
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type']
+Read symbol	IDN
+		shift	IDN	and push state	81
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN']
+Read symbol	(
+		shift	(	and push state	137
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T', 'IDN']
+Read symbol	,
+		reduce using the production	arg	['T', 'IDN']
+		push state	134
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 134]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'arg']
+Read symbol	,
+		reduce using the production	args	['arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	,
+		shift	,	and push state	216
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'T', 'IDN']
+Read symbol	)
+		reduce using the production	arg	['T', 'IDN']
+		push state	295
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 216, 295]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ',', 'arg']
+Read symbol	)
+		reduce using the production	args	['args', ',', 'arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	)
+		shift	)	and push state	219
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')']
+Read symbol	{
+		shift	{	and push state	307
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	299
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	375
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN']
+Read symbol	=
+		shift	=	and push state	429
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN']
+Read symbol	[
+		shift	[	and push state	145
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88, 145]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88, 145, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	226
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88, 145, 226]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	311
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 88, 145, 226, 311]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'IDN', '[', 'E', ']']
+Read symbol	;
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	87
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 87]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'L']
+Read symbol	;
+		reduce using the production	E	['L']
+		push state	459
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E']
+Read symbol	;
+		shift	;	and push state	477
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459, 477]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E', ';']
+Read symbol	IDN
+		reduce using the production	D	['T', 'IDN', '=', 'E', ';']
+		push state	298
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 298]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'D']
+Read symbol	IDN
+		reduce using the production	P	['D']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN']
+Read symbol	[
+		shift	[	and push state	69
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	110
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	174
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110, 174]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E', ']']
+Read symbol	=
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	302
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L']
+Read symbol	=
+		shift	=	and push state	378
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN']
+Read symbol	[
+		shift	[	and push state	145
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88, 145]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88, 145, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	226
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88, 145, 226]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	311
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88, 145, 226, 311]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN', '[', 'E', ']']
+Read symbol	;
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	87
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 87]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'L']
+Read symbol	;
+		reduce using the production	E	['L']
+		push state	431
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E']
+Read symbol	;
+		shift	;	and push state	460
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431, 460]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E', ';']
+Read symbol	IDN
+		reduce using the production	S	['L', '=', 'E', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'S']
+Read symbol	IDN
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	IDN
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	IDN
+		shift	IDN	and push state	303
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN']
+Read symbol	[
+		shift	[	and push state	69
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[']
+Read symbol	IDN
+		shift	IDN	and push state	95
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 95]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'IDN']
+Read symbol	]
+		reduce using the production	E	['IDN']
+		push state	110
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E']
+Read symbol	]
+		shift	]	and push state	174
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 303, 69, 110, 174]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'IDN', '[', 'E', ']']
+Read symbol	=
+		reduce using the production	L	['IDN', '[', 'E', ']']
+		push state	302
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L']
+Read symbol	=
+		shift	=	and push state	378
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=']
+Read symbol	IDN
+		shift	IDN	and push state	88
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 88]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'IDN']
+Read symbol	;
+		reduce using the production	E	['IDN']
+		push state	431
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E']
+Read symbol	;
+		shift	;	and push state	460
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 302, 378, 431, 460]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'L', '=', 'E', ';']
+Read symbol	}
+		reduce using the production	S	['L', '=', 'E', ';']
+		push state	297
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 297]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'S']
+Read symbol	}
+		reduce using the production	P	['S']
+		push state	369
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 369]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', 'P']
+Read symbol	}
+		reduce using the production	P	['P', 'P']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	437
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 437]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+Read symbol	public
+		reduce using the production	method	['access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+		push state	31
+		State stack:	[0, 3, 5, 6, 7, 22, 31]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'method']
+Read symbol	public
+		reduce using the production	method	['method', 'method']
+		push state	22
+		State stack:	[0, 3, 5, 6, 7, 22]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method']
+Read symbol	public
+		shift	public	and push state	13
+		State stack:	[0, 3, 5, 6, 7, 22, 13]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'public']
+Read symbol	void
+		reduce using the production	access	['public']
+		push state	32
+		State stack:	[0, 3, 5, 6, 7, 22, 32]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access']
+Read symbol	void
+		shift	void	and push state	30
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 30]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'void']
+Read symbol	IDN
+		reduce using the production	type	['void']
+		push state	57
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type']
+Read symbol	IDN
+		shift	IDN	and push state	81
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN']
+Read symbol	(
+		shift	(	and push state	137
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	135
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	217
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 135, 217]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'T', 'IDN']
+Read symbol	)
+		reduce using the production	arg	['T', 'IDN']
+		push state	134
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 134]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'arg']
+Read symbol	)
+		reduce using the production	args	['arg']
+		push state	138
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args']
+Read symbol	)
+		shift	)	and push state	219
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')']
+Read symbol	{
+		shift	{	and push state	307
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{']
+Read symbol	int
+		shift	int	and push state	16
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 16]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'int']
+Read symbol	IDN
+		reduce using the production	type	['int']
+		push state	40
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 40]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'type']
+Read symbol	IDN
+		reduce using the production	T	['type']
+		push state	299
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T']
+Read symbol	IDN
+		shift	IDN	and push state	375
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN']
+Read symbol	=
+		shift	=	and push state	429
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=']
+Read symbol	digit
+		shift	digit	and push state	91
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 91]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'digit']
+Read symbol	;
+		reduce using the production	E	['digit']
+		push state	459
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E']
+Read symbol	;
+		shift	;	and push state	477
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 299, 375, 429, 459, 477]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'T', 'IDN', '=', 'E', ';']
+Read symbol	}
+		reduce using the production	D	['T', 'IDN', '=', 'E', ';']
+		push state	298
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 298]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'D']
+Read symbol	}
+		reduce using the production	P	['D']
+		push state	384
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P']
+Read symbol	}
+		shift	}	and push state	437
+		State stack:	[0, 3, 5, 6, 7, 22, 32, 57, 81, 137, 138, 219, 307, 384, 437]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+Read symbol	}
+		reduce using the production	method	['access', 'type', 'IDN', '(', 'args', ')', '{', 'P', '}']
+		push state	31
+		State stack:	[0, 3, 5, 6, 7, 22, 31]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', 'method']
+Read symbol	}
+		reduce using the production	method	['method', 'method']
+		push state	22
+		State stack:	[0, 3, 5, 6, 7, 22]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method']
+Read symbol	}
+		shift	}	and push state	55
+		State stack:	[0, 3, 5, 6, 7, 22, 55]
+		Symbol stack:	['$', 'class', 'IDN', '{', 'field', 'method', '}']
+Read symbol	$
+		reduce using the production	classes	['class', 'IDN', '{', 'field', 'method', '}']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['$', 'classes']
+Read symbol	$
+		reduce using the production	start	['classes']
+		push state	1
+		State stack:	[0, 1]
+		Symbol stack:	['$', 'start']
+Read symbol	$
+Accept! Congratulations!
+Finished in	405	steps
