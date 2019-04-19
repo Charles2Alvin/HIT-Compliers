@@ -28,27 +28,49 @@
 
 
 #### 文法的定义：
+
 start -> classes
+
 ##### 类
+
 classes -> classes classes
+
 classes -> class IDN { method }
+
 classes -> class IDN { field method }
+
 ##### 域和方法
+
 field -> D
+
 field -> access D
+
 method -> method method
+
 method -> type IDN ( ) { P }
+
 method -> type IDN ( args ) { P }
+
 method -> access type IDN ( ) { P }
+
 method -> access type IDN ( args ) { P }
+
 ##### 参数列表
+
 args -> args , arg
+
 args -> arg
+
 arg -> T IDN
+
 ##### 访问控制符
+
 access -> public
+
 access -> private
+
 access -> protected
+
 ##### 程序主体
 P -> P P
 P -> D
