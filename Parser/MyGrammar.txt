@@ -33,8 +33,11 @@ M -> m
 M -> M , m
 m -> IDN = E ;
 D -> T IDN = E ;
+D -> T IDN = { A } ;
 T -> type
 T -> type [ ]
+A -> E
+A -> A , E
 # 数据类型
 type -> int 
 type -> float
@@ -49,15 +52,30 @@ S -> op IDN ;
 op -> ++
 op -> --
 S -> L = E ;
+S -> R ;
+# 返回值
+R -> return E 
+R -> return 
 # 函数调用
 S -> call ;
 call -> IDN ( )
 call -> IDN ( param )
 param -> E
 param -> param , E
+# 类的创建
+S -> IDN IDN = new IDN ( ) ;
+S -> IDN IDN = new IDN ( param ) ;
+# 调用方法
+S -> IDN func ;
+func -> F
+func -> func F
+F -> @ IDN ( )
+F -> @ IDN ( param )
 # 运算表达式
 E -> E + E
 E -> E * E
+E -> E - E
+E -> E / E
 E -> - E
 E -> ( E )
 E -> IDN
@@ -74,8 +92,8 @@ S -> while ( B ) { P }
 S -> for ( S B ; IDN op ) { P }
 S -> for ( S B ; IDN = E ) { P }
 # 布尔表达式
-B -> B and B
-B -> B or B
+B -> B && B
+B -> B || B
 B -> E relop E
 B -> true
 B -> false

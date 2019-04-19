@@ -13,16 +13,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lexer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="177" column="45" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
+            <state relative-caret-position="297">
+              <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
               <folding>
-                <element signature="e#45#1640#0" />
                 <element signature="e#1680#1778#0" />
                 <element signature="e#1796#2911#0" />
                 <element signature="e#2951#4258#0" />
                 <element signature="e#4305#4749#0" />
-                <element signature="e#4791#6435#0" />
                 <element signature="e#6466#6525#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Grammar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,17 +40,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="279" column="30" selection-start-line="279" selection-start-column="30" selection-end-line="279" selection-end-column="30" />
+            <state relative-caret-position="114">
+              <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
               <folding>
-                <element signature="e#113#354#0" />
+                <element signature="e#124#393#0" />
                 <element signature="e#391#1298#0" />
                 <element signature="e#1383#1802#0" />
                 <element signature="e#1873#3266#0" />
                 <element signature="e#3340#3886#0" />
-                <element signature="e#6190#6321#0" />
-                <element signature="e#6370#6499#0" />
-                <element signature="e#6533#8934#0" />
+                <element signature="e#3922#6139#0" />
+                <element signature="e#6187#6672#0" />
+                <element signature="e#6705#7248#0" />
+                <element signature="e#7357#7504#0" />
+                <element signature="e#7542#7681#0" />
                 <element signature="e#8979#9122#0" />
                 <element signature="e#9168#9363#0" />
                 <element signature="e#9410#9519#0" />
@@ -179,7 +190,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24074075" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45959595" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -190,17 +201,24 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Grammar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lexer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="177" column="45" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
+        <state relative-caret-position="297">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
           <folding>
-            <element signature="e#45#1640#0" />
             <element signature="e#1680#1778#0" />
             <element signature="e#1796#2911#0" />
             <element signature="e#2951#4258#0" />
             <element signature="e#4305#4749#0" />
-            <element signature="e#4791#6435#0" />
             <element signature="e#6466#6525#0" />
           </folding>
         </state>
@@ -208,17 +226,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="279" column="30" selection-start-line="279" selection-start-column="30" selection-end-line="279" selection-end-column="30" />
+        <state relative-caret-position="114">
+          <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
           <folding>
-            <element signature="e#113#354#0" />
+            <element signature="e#124#393#0" />
             <element signature="e#391#1298#0" />
             <element signature="e#1383#1802#0" />
             <element signature="e#1873#3266#0" />
             <element signature="e#3340#3886#0" />
-            <element signature="e#6190#6321#0" />
-            <element signature="e#6370#6499#0" />
-            <element signature="e#6533#8934#0" />
+            <element signature="e#3922#6139#0" />
+            <element signature="e#6187#6672#0" />
+            <element signature="e#6705#7248#0" />
+            <element signature="e#7357#7504#0" />
+            <element signature="e#7542#7681#0" />
             <element signature="e#8979#9122#0" />
             <element signature="e#9168#9363#0" />
             <element signature="e#9410#9519#0" />

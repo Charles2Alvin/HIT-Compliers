@@ -13,6 +13,8 @@ class Parser():
         self.nonterminals = []
         self.states = []        # 自动机的所有状态，每个状态都是一个项目集
         self.table = []
+        self.actionTable = []
+        self.gotoTable = []
 
     def buildStates(self):
         startState = ItemSet()
@@ -139,15 +141,44 @@ class Parser():
         self.actionTable = actionTable
         self.gotoTable = gotoTable
 
+    def outputTable(self):
+        f = open('ActionTable.txt', 'w')
+        for entry in self.actionTable:
+            string = str(entry.state) + "\t" + str(entry.symbol) +\
+                     "\t" + str(entry.content) + "\n"
+            f.write(string)
+        f.close()
+        f = open('GotoTable.txt', 'w')
+        for entry in self.gotoTable:
+            string = str(entry.state) + "\t" + str(entry.symbol) +\
+                     "\t" + str(entry.content) + "\n"
+            f.write(string)
+        f.close()
+
+    def readTable(self):
+        actionTable, gotoTable = [], []
+        for line in open('ActionTable.txt', 'r'):
+            l = line.split()
+            state, symbol, content = l[0], l[1], l[2]
+            entry = Entry(state, symbol, content)
+            actionTable.append(entry)
+        for line in open('GotoTable.txt', 'r'):
+            l = line.split()
+            state, symbol, content = l[0], l[1], l[2]
+            entry = Entry(state, symbol, content)
+            gotoTable.append(entry)
+        self.actionTable = actionTable
+        self.gotoTable = gotoTable
+
     def findAction(self, state, symbol):
         for entry in self.actionTable:
-            if entry.state == state and entry.symbol == symbol:
+            if int(entry.state) == state and entry.symbol == symbol:
                 return entry.content
 
     def findGoto(self, state, symbol):
         for entry in self.gotoTable:
-            if entry.state == state and entry.symbol == symbol:
-                return entry.content
+            if int(entry.state) == state and entry.symbol == symbol:
+                return int(entry.content)
 
     def parse(self, w):
         f = open('Analysis_Result.txt','w')
@@ -166,8 +197,8 @@ class Parser():
             top = stateStack[-1]
             content = self.findAction(top, symbol)
             if content == None:
-                print("error! no action")
-                f.write("error! no action\n")
+                print("Error at line", w[i][3], "no action")
+                f.write("Error at line\t" + str(w[0][3]) + "\tno action\n")
                 break
             if content[0] == 's':
                 stateIndex = int(content[1:])
@@ -274,14 +305,13 @@ class Parser():
         self.terminals = grammar.terminals
         self.firstSet = grammar.firstSet
         self.followSet = grammar.followSet
-        # grammar.viewFirst()
+        self.readTable()
+
+    def updateParse(self, w):
         self.buildStates()
         self.buildTable()
-        print(self.actionTable)
-        # g.viewProductions()
-        # self.viewStates(self.states)
-        # self.viewTable()
-
+        self.outputTable()
+        self.parse(w)
 
 if __name__ == "__main__":
     lexer = Lexer()
@@ -298,7 +328,8 @@ if __name__ == "__main__":
 
     print("Parsing...")
     t2 = time.time()
-    p.parse(lexer.output)
-    print("Syntactic analysis completed in", '{:.4f}ms'.format(time.time() - t2))
+    # p.parse(lexer.output)
+    p.updateParse(lexer.output)
+    print("Syntactic analysis completed in", '{:.4f}s'.format(time.time() - t2))
 
 

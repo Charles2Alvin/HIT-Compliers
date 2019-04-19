@@ -8,15 +8,15 @@ class Lexer:
                          '++', '--']
         self.KEY_WORD = ['if', 'else', 'then', 'for', 'do', 'while', \
                          'int', 'float', 'char', 'long', 'double', 'bool', 'typedef', 'struct','void',\
-                         'true', 'false',\
+                         'true', 'false','return', '@', \
                          'include', 'using', 'namespace', 'std', 'new',\
                          'printf', 'scanf', 'System', 'public', 'private', 'protected', 'class']
         self.TYPE = ['int', 'float', 'char', 'long', 'bool']
         self.DELIMITER = ['(', ')', '{', '}','[',']', ';', '<', '>', ',']
         self.map = {'if': 'IF', 'else': 'ELSE', 'then': 'THEN', 'for': 'FOR', 'while': 'WHILE', \
                     'int': 'INT', 'float': 'FLOAT', 'char': 'CHAR', 'long': 'LONG', 'bool': 'BOOL', \
-                    'true':'TRUE', 'false':'FALSE','double': 'DOUBLE', \
-                    'typedef': 'C', 'struct': 'C', 'void': 'C', 'printf': 'C', 'scanf': 'C',
+                    'true':'TRUE', 'false':'FALSE','double': 'DOUBLE', '@': 'my', \
+                    'typedef': 'C', 'struct': 'C', 'void': 'C', 'printf': 'C', 'scanf': 'C', 'return': 'C', \
                     'System': 'JAVA','public': 'ACESS', 'private': 'ACESS', 'protected': 'ACESS', 'class': 'JAVA', \
                     'using': 'CPP', 'namespace': 'CPP', 'main': 'CPP', 'include': 'CPP', 'new':'CPP'}
         self.delimiter = {'(': 'LP', ')': 'RP', '{': 'CLP', '}': 'CRP', '[': 'LSB', ']': 'RSB', \
