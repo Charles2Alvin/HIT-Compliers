@@ -1,0 +1,90 @@
+P -> func funcs
+funcs -> func funcs
+funcs -> $
+func -> type IDN ( args ) func_body
+# 数据类型
+type -> int
+type -> char
+type -> float
+type -> double
+type -> void
+# 方法参数
+args -> type IDN arg
+args -> $
+arg -> , type IDN arg
+arg -> $
+# 方法内部
+func_body -> ;
+func_body -> block
+block -> { define_stmts stmts }
+# 声明语句
+define_stmts -> define_stmt define_stmts
+define_stmts -> $
+define_stmt -> type IDN init vars ;
+init -> = expression
+init -> [ const ]
+init -> $
+vars -> , IDN init vars
+vars -> $
+# 普通语句
+stmts -> stmt stmts
+stmts -> $
+stmt -> assign_stmt
+stmt -> jump_stmt
+stmt -> iteration_stmt
+stmt -> branch_stmt 
+# 赋值语句
+assign_stmt -> expression ;
+# 跳转语句
+jump_stmt -> continue ;
+jump_stmt -> break ;
+jump_stmt -> return isnull_expr ;
+# 循环语句
+iteration_stmt -> while ( logical_expression ) block_stmt
+iteration_stmt -> for ( isnull_expr ; isnull_expr ; isnull_expr ) block_stmt
+# 分支语句
+branch_stmt -> if ( logical_expression ) block_stmt result
+result -> else block_stmt
+result -> $
+# 逻辑表达式 
+logical_expression -> expression bool_expression
+bool_expression -> lop expression bool_expression
+bool_expression -> $
+# 逻辑运算符
+lop -> &&
+lop -> ||
+block_stmt -> { stmts }
+isnull_expr -> expression
+isnull_expr -> $
+expression -> value operation
+operation -> compare_op value
+operation -> equal_op value
+operation -> $
+# 比较运算符
+compare_op -> >
+compare_op -> >=
+compare_op -> <
+compare_op -> <=
+compare_op -> ==
+compare_op -> !=
+equal_op -> =
+# 值
+value -> item value'
+value' -> + item value'
+value' -> - item value'
+value' -> $
+item -> factor item'
+item' -> * factor item'
+item' -> / factor item'
+item' -> % factor item'
+item' -> $
+factor -> ( value )
+factor -> IDN
+factor -> IDN [ const ]
+factor -> IDN call_func
+factor -> const
+call_func -> ( es )
+es -> expression eps
+eps -> , expression eps
+eps -> $
+

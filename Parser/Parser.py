@@ -328,8 +328,8 @@ if __name__ == "__main__":
 
     print("Parsing...")
     t2 = time.time()
-    # p.parse(lexer.output)
-    p.updateParse(lexer.output)
+    p.parse(lexer.output)
+    # p.updateParse(lexer.output)
     print("Syntactic analysis completed in", '{:.4f}s'.format(time.time() - t2))
 
 

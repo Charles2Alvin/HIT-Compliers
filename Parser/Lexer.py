@@ -1,4 +1,5 @@
 import time
+import re
 class Lexer:
     def __init__(self):
         self.code = ''
@@ -38,30 +39,41 @@ class Lexer:
         tuples = []
         flag = False
         for line in self.code:
-            # 删除单行内的所有注释
-            while '/*' in line and '*/' in line:
-                leftNote = line.index('/*')
-                rightNote = line.index('*/')
-                part1 = line[0:leftNote]
-                part2 = line[rightNote + 2:]
-                line = part1 + part2
-            # 删除跨行注释，出现左部时，保留左边内容
-            if '/*' in line:
-                leftNote = line.index('/*')
-                line = line[0:leftNote]
-                li = line.split()
-                for word in li:
-                    tuples.append([word, lineIndex])
-                flag = True
-            if '*/' in line and flag is True:
-                flag = False
-                rightNote = line.index('*/')
-                line = line[rightNote + 2:]
-            if flag is True:
-                lineIndex += 1
-                continue
-            li = line.split()
-            for word in li:
+            # # 删除单行内的所有注释
+            # while '/*' in line and '*/' in line:
+            #     leftNote = line.index('/*')
+            #     rightNote = line.index('*/')
+            #     part1 = line[0:leftNote]
+            #     part2 = line[rightNote + 2:]
+            #     line = part1 + part2
+            # # 删除跨行注释，出现左部时，保留左边内容
+            # if '/*' in line:
+            #     leftNote = line.index('/*')
+            #     line = line[0:leftNote]
+            #     li = line.split()
+            #     for word in li:
+            #         tuples.append([word, lineIndex])
+            #     flag = True
+            # if '*/' in line and flag is True:
+            #     flag = False
+            #     rightNote = line.index('*/')
+            #     line = line[rightNote + 2:]
+            # if flag is True:
+            #     lineIndex += 1
+            #     continue
+            word = ''
+            for i in range(len(line)):
+                if line[i] != ' ':
+                    word += line[i]
+                elif line[i] == ' ':
+                    if word != '' and word != '\t':
+                        word = word.replace('\t', '')
+                        tuples.append([word, lineIndex])
+                        word = ''
+                    else:
+                        continue
+            if word != '' and word != '\t':
+                word = word.replace('\t', '')
                 tuples.append([word, lineIndex])
             lineIndex += 1
         self.charset = set(self.code)
@@ -186,4 +198,5 @@ class Lexer:
 
 if __name__ == "__main__":
     lexer = Lexer()
-    lexer.configure('source.txt')
+    # lexer.configure('source.txt')
+    lexer.configure('LL1Code.txt')
