@@ -1,0 +1,25 @@
+P -> D S
+# 声明语句
+D -> D D
+D -> type IDN 
+type -> int
+type -> float
+# 表达式语句
+S -> S S
+S -> IDN = E
+E -> E + T
+E -> T
+T -> T * F
+T -> F
+F -> ( E )
+F -> digit
+F -> IDN
+# 逻辑表达式
+C -> true
+C -> false
+C -> E relop E
+relop -> >
+relop -> <
+# 分支结构
+S -> if C else S
+

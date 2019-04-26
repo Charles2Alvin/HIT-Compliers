@@ -1,0 +1,267 @@
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 4]
+		Symbol stack:	['#', 'int']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3b38>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 3]
+		Symbol stack:	['#', 'type']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3b70>]
+Read symbol	IDN
+		shift	IDN	and push state	10
+		State stack:	[0, 3, 10]
+		Symbol stack:	['#', 'type', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3b70>, <Helper.TreeNode object at 0x10b9f3cf8>]
+Read symbol	int
+		reduce using the production	D->['type', 'IDN']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['#', 'D']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3d68>]
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 2, 4]
+		Symbol stack:	['#', 'D', 'int']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3d68>, <Helper.TreeNode object at 0x10b9f3e80>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 2, 3]
+		Symbol stack:	['#', 'D', 'type']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3d68>, <Helper.TreeNode object at 0x10b9f3f28>]
+Read symbol	IDN
+		shift	IDN	and push state	10
+		State stack:	[0, 2, 3, 10]
+		Symbol stack:	['#', 'D', 'type', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3d68>, <Helper.TreeNode object at 0x10b9f3f28>, <Helper.TreeNode object at 0x10b9f3eb8>]
+Read symbol	IDN
+		reduce using the production	D->['type', 'IDN']
+		push state	6
+		State stack:	[0, 2, 6]
+		Symbol stack:	['#', 'D', 'D']
+		Forest stack:	[<Helper.TreeNode object at 0x10b9f3d68>, <Helper.TreeNode object at 0x10b9f3f60>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['#', 'D']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>]
+Read symbol	IDN
+		shift	IDN	and push state	8
+		State stack:	[0, 2, 8]
+		Symbol stack:	['#', 'D', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>]
+Read symbol	=
+		shift	=	and push state	12
+		State stack:	[0, 2, 8, 12]
+		Symbol stack:	['#', 'D', 'IDN', '=']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>, <Helper.TreeNode object at 0x10b9530b8>]
+Read symbol	digit
+		shift	digit	and push state	27
+		State stack:	[0, 2, 8, 12, 27]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'digit']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>, <Helper.TreeNode object at 0x10b9530b8>, <Helper.TreeNode object at 0x10b953198>]
+Read symbol	IDN
+		reduce using the production	F->['digit']
+		push state	24
+		State stack:	[0, 2, 8, 12, 24]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'F']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>, <Helper.TreeNode object at 0x10b9530b8>, <Helper.TreeNode object at 0x10b953278>]
+Read symbol	IDN
+		reduce using the production	T->['F']
+		push state	23
+		State stack:	[0, 2, 8, 12, 23]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'T']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>, <Helper.TreeNode object at 0x10b9530b8>, <Helper.TreeNode object at 0x10b9532e8>]
+Read symbol	IDN
+		reduce using the production	E->['T']
+		push state	22
+		State stack:	[0, 2, 8, 12, 22]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953128>, <Helper.TreeNode object at 0x10b9530b8>, <Helper.TreeNode object at 0x10b953390>]
+Read symbol	IDN
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>]
+Read symbol	IDN
+		shift	IDN	and push state	8
+		State stack:	[0, 2, 7, 8]
+		Symbol stack:	['#', 'D', 'S', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>]
+Read symbol	=
+		shift	=	and push state	12
+		State stack:	[0, 2, 7, 8, 12]
+		Symbol stack:	['#', 'D', 'S', 'IDN', '=']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>, <Helper.TreeNode object at 0x10b9537f0>]
+Read symbol	digit
+		shift	digit	and push state	27
+		State stack:	[0, 2, 7, 8, 12, 27]
+		Symbol stack:	['#', 'D', 'S', 'IDN', '=', 'digit']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>, <Helper.TreeNode object at 0x10b9537f0>, <Helper.TreeNode object at 0x10b98e0f0>]
+Read symbol	if
+		reduce using the production	F->['digit']
+		push state	24
+		State stack:	[0, 2, 7, 8, 12, 24]
+		Symbol stack:	['#', 'D', 'S', 'IDN', '=', 'F']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>, <Helper.TreeNode object at 0x10b9537f0>, <Helper.TreeNode object at 0x10b98e908>]
+Read symbol	if
+		reduce using the production	T->['F']
+		push state	23
+		State stack:	[0, 2, 7, 8, 12, 23]
+		Symbol stack:	['#', 'D', 'S', 'IDN', '=', 'T']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>, <Helper.TreeNode object at 0x10b9537f0>, <Helper.TreeNode object at 0x10b98e9b0>]
+Read symbol	if
+		reduce using the production	E->['T']
+		push state	22
+		State stack:	[0, 2, 7, 8, 12, 22]
+		Symbol stack:	['#', 'D', 'S', 'IDN', '=', 'E']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b953400>, <Helper.TreeNode object at 0x10b9537f0>, <Helper.TreeNode object at 0x10b98ea20>]
+Read symbol	if
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	11
+		State stack:	[0, 2, 7, 11]
+		Symbol stack:	['#', 'D', 'S', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b953470>, <Helper.TreeNode object at 0x10b98eb00>]
+Read symbol	if
+		reduce using the production	S->['S', 'S']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>]
+Read symbol	if
+		shift	if	and push state	9
+		State stack:	[0, 2, 7, 9]
+		Symbol stack:	['#', 'D', 'S', 'if']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>]
+Read symbol	IDN
+		shift	IDN	and push state	17
+		State stack:	[0, 2, 7, 9, 17]
+		Symbol stack:	['#', 'D', 'S', 'if', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98eb70>]
+Read symbol	<
+		reduce using the production	F->['IDN']
+		push state	15
+		State stack:	[0, 2, 7, 9, 15]
+		Symbol stack:	['#', 'D', 'S', 'if', 'F']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ebe0>]
+Read symbol	<
+		reduce using the production	T->['F']
+		push state	14
+		State stack:	[0, 2, 7, 9, 14]
+		Symbol stack:	['#', 'D', 'S', 'if', 'T']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ec50>]
+Read symbol	<
+		reduce using the production	E->['T']
+		push state	13
+		State stack:	[0, 2, 7, 9, 13]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>]
+Read symbol	<
+		shift	<	and push state	31
+		State stack:	[0, 2, 7, 9, 13, 31]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', '<']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b98ecf8>]
+Read symbol	IDN
+		reduce using the production	relop->['<']
+		push state	28
+		State stack:	[0, 2, 7, 9, 13, 28]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', 'relop']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b9f3c50>]
+Read symbol	IDN
+		shift	IDN	and push state	46
+		State stack:	[0, 2, 7, 9, 13, 28, 46]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', 'relop', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b9f3c50>, <Helper.TreeNode object at 0x10b9f3cc0>]
+Read symbol	else
+		reduce using the production	F->['IDN']
+		push state	45
+		State stack:	[0, 2, 7, 9, 13, 28, 45]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', 'relop', 'F']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b9f3c50>, <Helper.TreeNode object at 0x10b9f3e48>]
+Read symbol	else
+		reduce using the production	T->['F']
+		push state	44
+		State stack:	[0, 2, 7, 9, 13, 28, 44]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', 'relop', 'T']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b9f3c50>, <Helper.TreeNode object at 0x10b9f3fd0>]
+Read symbol	else
+		reduce using the production	E->['T']
+		push state	43
+		State stack:	[0, 2, 7, 9, 13, 28, 43]
+		Symbol stack:	['#', 'D', 'S', 'if', 'E', 'relop', 'E']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b98ecc0>, <Helper.TreeNode object at 0x10b9f3c50>, <Helper.TreeNode object at 0x10b9530f0>]
+Read symbol	else
+		reduce using the production	C->['E', 'relop', 'E']
+		push state	16
+		State stack:	[0, 2, 7, 9, 16]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>]
+Read symbol	else
+		shift	else	and push state	33
+		State stack:	[0, 2, 7, 9, 16, 33]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>]
+Read symbol	IDN
+		shift	IDN	and push state	8
+		State stack:	[0, 2, 7, 9, 16, 33, 8]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>]
+Read symbol	=
+		shift	=	and push state	12
+		State stack:	[0, 2, 7, 9, 16, 33, 8, 12]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN', '=']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>, <Helper.TreeNode object at 0x10b953358>]
+Read symbol	IDN
+		shift	IDN	and push state	25
+		State stack:	[0, 2, 7, 9, 16, 33, 8, 12, 25]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN', '=', 'IDN']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>, <Helper.TreeNode object at 0x10b953358>, <Helper.TreeNode object at 0x10b98e668>]
+Read symbol	#
+		reduce using the production	F->['IDN']
+		push state	24
+		State stack:	[0, 2, 7, 9, 16, 33, 8, 12, 24]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN', '=', 'F']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>, <Helper.TreeNode object at 0x10b953358>, <Helper.TreeNode object at 0x10b98e978>]
+Read symbol	#
+		reduce using the production	T->['F']
+		push state	23
+		State stack:	[0, 2, 7, 9, 16, 33, 8, 12, 23]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN', '=', 'T']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>, <Helper.TreeNode object at 0x10b953358>, <Helper.TreeNode object at 0x10b98ea90>]
+Read symbol	#
+		reduce using the production	E->['T']
+		push state	22
+		State stack:	[0, 2, 7, 9, 16, 33, 8, 12, 22]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'IDN', '=', 'E']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b9533c8>, <Helper.TreeNode object at 0x10b953358>, <Helper.TreeNode object at 0x10b98eba8>]
+Read symbol	#
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	51
+		State stack:	[0, 2, 7, 9, 16, 33, 51]
+		Symbol stack:	['#', 'D', 'S', 'if', 'C', 'else', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98ea58>, <Helper.TreeNode object at 0x10b953240>, <Helper.TreeNode object at 0x10b953320>, <Helper.TreeNode object at 0x10b98ec88>]
+Read symbol	#
+		reduce using the production	S->['if', 'C', 'else', 'S']
+		push state	11
+		State stack:	[0, 2, 7, 11]
+		Symbol stack:	['#', 'D', 'S', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eac8>, <Helper.TreeNode object at 0x10b98edd8>]
+Read symbol	#
+		reduce using the production	S->['S', 'S']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'S']
+		Forest stack:	[<Helper.TreeNode object at 0x10b953048>, <Helper.TreeNode object at 0x10b98eda0>]
+Read symbol	#
+		reduce using the production	P->['D', 'S']
+		push state	1
+		State stack:	[0, 1]
+		Symbol stack:	['#', 'P']
+		Forest stack:	[<Helper.TreeNode object at 0x10b98ee10>]
+Read symbol	#
+Accept! Congratulations!
+Finished in	47	steps
