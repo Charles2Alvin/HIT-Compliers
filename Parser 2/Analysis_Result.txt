@@ -2,410 +2,438 @@ Read symbol	int
 		shift	int	and push state	4
 		State stack:	[0, 4]
 		Symbol stack:	['#', 'int']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e5ef0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f8615c0>]
 Read symbol	IDN
 		reduce using the production	type->['int']
 		push state	3
 		State stack:	[0, 3]
 		Symbol stack:	['#', 'type']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e5f28>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f8615f8>]
 Read symbol	IDN
 		shift	IDN	and push state	12
 		State stack:	[0, 3, 12]
 		Symbol stack:	['#', 'type', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e5f28>, <Analyzer.TreeNode object at 0x10d0e7048>]
-Read symbol	IDN
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f8615f8>, <Analyzer.TreeNode object at 0x10f861748>]
+Read symbol	int
 		reduce using the production	D->['type', 'IDN']
 		push state	2
 		State stack:	[0, 2]
 		Symbol stack:	['#', 'D']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861860>]
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 2, 4]
+		Symbol stack:	['#', 'D', 'int']
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861860>, <Analyzer.TreeNode object at 0x10f8618d0>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 2, 3]
+		Symbol stack:	['#', 'D', 'type']
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861860>, <Analyzer.TreeNode object at 0x10f861978>]
+Read symbol	IDN
+		shift	IDN	and push state	12
+		State stack:	[0, 2, 3, 12]
+		Symbol stack:	['#', 'D', 'type', 'IDN']
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861860>, <Analyzer.TreeNode object at 0x10f861978>, <Analyzer.TreeNode object at 0x10f8619e8>]
+Read symbol	IDN
+		reduce using the production	D->['type', 'IDN']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'D']
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861860>, <Analyzer.TreeNode object at 0x10f861a90>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['#', 'D']
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>]
 Read symbol	IDN
 		shift	IDN	and push state	9
 		State stack:	[0, 2, 9]
 		Symbol stack:	['#', 'D', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>]
 Read symbol	=
 		shift	=	and push state	14
 		State stack:	[0, 2, 9, 14]
 		Symbol stack:	['#', 'D', 'IDN', '=']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>]
 Read symbol	IDN
 		shift	IDN	and push state	20
 		State stack:	[0, 2, 9, 14, 20]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e72e8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861c88>]
 Read symbol	+
 		reduce using the production	F->['IDN']
 		push state	19
 		State stack:	[0, 2, 9, 14, 19]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7358>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861cf8>]
 Read symbol	+
 		reduce using the production	T->['F']
 		push state	18
 		State stack:	[0, 2, 9, 14, 18]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e73c8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861d68>]
 Read symbol	+
 		reduce using the production	E->['T']
 		push state	17
 		State stack:	[0, 2, 9, 14, 17]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7438>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861dd8>]
 Read symbol	+
 		shift	+	and push state	33
 		State stack:	[0, 2, 9, 14, 17, 33]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7438>, <Analyzer.TreeNode object at 0x10d0e7470>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861dd8>, <Analyzer.TreeNode object at 0x10f861e10>]
 Read symbol	IDN
 		shift	IDN	and push state	20
 		State stack:	[0, 2, 9, 14, 17, 33, 20]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7438>, <Analyzer.TreeNode object at 0x10d0e7470>, <Analyzer.TreeNode object at 0x10d0e74e0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861dd8>, <Analyzer.TreeNode object at 0x10f861e10>, <Analyzer.TreeNode object at 0x10f861e80>]
 Read symbol	while
 		reduce using the production	F->['IDN']
 		push state	19
 		State stack:	[0, 2, 9, 14, 17, 33, 19]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7438>, <Analyzer.TreeNode object at 0x10d0e7470>, <Analyzer.TreeNode object at 0x10d0e7588>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861dd8>, <Analyzer.TreeNode object at 0x10f861e10>, <Analyzer.TreeNode object at 0x10f861f28>]
 Read symbol	while
 		reduce using the production	T->['F']
 		push state	49
 		State stack:	[0, 2, 9, 14, 17, 33, 49]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e7438>, <Analyzer.TreeNode object at 0x10d0e7470>, <Analyzer.TreeNode object at 0x10d0e7630>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f861dd8>, <Analyzer.TreeNode object at 0x10f861e10>, <Analyzer.TreeNode object at 0x10f861fd0>]
 Read symbol	while
 		reduce using the production	E->['E', '+', 'T']
 		push state	17
 		State stack:	[0, 2, 9, 14, 17]
 		Symbol stack:	['#', 'D', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7240>, <Analyzer.TreeNode object at 0x10d0e7278>, <Analyzer.TreeNode object at 0x10d0e76d8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861be0>, <Analyzer.TreeNode object at 0x10f861c18>, <Analyzer.TreeNode object at 0x10f7e30b8>]
 Read symbol	while
 		reduce using the production	S->['IDN', '=', 'E']
 		push state	8
 		State stack:	[0, 2, 8]
 		Symbol stack:	['#', 'D', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>]
 Read symbol	while
 		shift	while	and push state	11
 		State stack:	[0, 2, 8, 11]
 		Symbol stack:	['#', 'D', 'S', 'while']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>]
 Read symbol	(
 		shift	(	and push state	16
 		State stack:	[0, 2, 8, 11, 16]
 		Symbol stack:	['#', 'D', 'S', 'while', '(']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>]
 Read symbol	IDN
 		shift	IDN	and push state	27
 		State stack:	[0, 2, 8, 11, 16, 27]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e78d0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e32b0>]
 Read symbol	<
 		reduce using the production	F->['IDN']
 		push state	25
 		State stack:	[0, 2, 8, 11, 16, 25]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7940>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3320>]
 Read symbol	<
 		reduce using the production	T->['F']
 		push state	24
 		State stack:	[0, 2, 8, 11, 16, 24]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e79b0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3390>]
 Read symbol	<
 		reduce using the production	E->['T']
 		push state	23
 		State stack:	[0, 2, 8, 11, 16, 23]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>]
 Read symbol	<
 		shift	<	and push state	44
 		State stack:	[0, 2, 8, 11, 16, 23, 44]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', '<']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7a58>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f7e3438>]
 Read symbol	IDN
 		reduce using the production	relop->['<']
 		push state	41
 		State stack:	[0, 2, 8, 11, 16, 23, 41]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7b00>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f861208>]
 Read symbol	IDN
 		shift	IDN	and push state	38
 		State stack:	[0, 2, 8, 11, 16, 23, 41, 38]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7b00>, <Analyzer.TreeNode object at 0x10d0e7b70>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f861208>, <Analyzer.TreeNode object at 0x10f861438>]
 Read symbol	)
 		reduce using the production	F->['IDN']
 		push state	37
 		State stack:	[0, 2, 8, 11, 16, 23, 41, 37]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7b00>, <Analyzer.TreeNode object at 0x10d0e5f60>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f861208>, <Analyzer.TreeNode object at 0x10f861470>]
 Read symbol	)
 		reduce using the production	T->['F']
 		push state	36
 		State stack:	[0, 2, 8, 11, 16, 23, 41, 36]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7b00>, <Analyzer.TreeNode object at 0x10d0e5be0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f861208>, <Analyzer.TreeNode object at 0x10f861908>]
 Read symbol	)
 		reduce using the production	E->['T']
 		push state	55
 		State stack:	[0, 2, 8, 11, 16, 23, 41, 55]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7a20>, <Analyzer.TreeNode object at 0x10d0e7b00>, <Analyzer.TreeNode object at 0x10d0e7080>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f7e3400>, <Analyzer.TreeNode object at 0x10f861208>, <Analyzer.TreeNode object at 0x10f8619b0>]
 Read symbol	)
 		reduce using the production	C->['E', 'relop', 'E']
 		push state	32
 		State stack:	[0, 2, 8, 11, 16, 32]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>]
 Read symbol	)
 		shift	)	and push state	48
 		State stack:	[0, 2, 8, 11, 16, 32, 48]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>]
 Read symbol	if
 		shift	if	and push state	10
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>]
 Read symbol	(
 		shift	(	and push state	15
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>]
 Read symbol	IDN
 		shift	IDN	and push state	27
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 27]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7518>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861e48>]
 Read symbol	<
 		reduce using the production	F->['IDN']
 		push state	25
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 25]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e75c0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861ef0>]
 Read symbol	<
 		reduce using the production	T->['F']
 		push state	24
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 24]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7668>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861f98>]
 Read symbol	<
 		reduce using the production	E->['T']
 		push state	23
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>]
 Read symbol	<
 		shift	<	and push state	44
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 44]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', '<']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e77f0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e3128>]
 Read symbol	IDN
 		reduce using the production	relop->['<']
 		push state	41
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 41]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e7978>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e32e8>]
 Read symbol	IDN
 		shift	IDN	and push state	38
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 41, 38]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e7978>, <Analyzer.TreeNode object at 0x10d0e7a90>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e32e8>, <Analyzer.TreeNode object at 0x10f7e33c8>]
 Read symbol	)
 		reduce using the production	F->['IDN']
 		push state	37
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 41, 37]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e7978>, <Analyzer.TreeNode object at 0x10d0e7b38>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e32e8>, <Analyzer.TreeNode object at 0x10f861b38>]
 Read symbol	)
 		reduce using the production	T->['F']
 		push state	36
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 41, 36]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e7978>, <Analyzer.TreeNode object at 0x10d0e5da0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e32e8>, <Analyzer.TreeNode object at 0x10f861898>]
 Read symbol	)
 		reduce using the production	E->['T']
 		push state	55
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 23, 41, 55]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7748>, <Analyzer.TreeNode object at 0x10d0e7978>, <Analyzer.TreeNode object at 0x10d0e7198>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f7e3080>, <Analyzer.TreeNode object at 0x10f7e32e8>, <Analyzer.TreeNode object at 0x10f861a20>]
 Read symbol	)
 		reduce using the production	C->['E', 'relop', 'E']
 		push state	26
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>]
 Read symbol	)
 		shift	)	and push state	46
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>]
 Read symbol	IDN
 		shift	IDN	and push state	59
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>]
 Read symbol	=
 		shift	=	and push state	69
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>]
 Read symbol	IDN
 		shift	IDN	and push state	76
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 76]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7ba8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e3470>]
 Read symbol	+
 		reduce using the production	F->['IDN']
 		push state	75
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 75]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7c18>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e34e0>]
 Read symbol	+
 		reduce using the production	T->['F']
 		push state	74
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 74]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7c88>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e3550>]
 Read symbol	+
 		reduce using the production	E->['T']
 		push state	73
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7cf8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e35c0>]
 Read symbol	+
 		shift	+	and push state	81
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73, 81]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7cf8>, <Analyzer.TreeNode object at 0x10d0e7d30>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e35c0>, <Analyzer.TreeNode object at 0x10f7e35f8>]
 Read symbol	IDN
 		shift	IDN	and push state	76
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73, 81, 76]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7cf8>, <Analyzer.TreeNode object at 0x10d0e7d30>, <Analyzer.TreeNode object at 0x10d0e7da0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e35c0>, <Analyzer.TreeNode object at 0x10f7e35f8>, <Analyzer.TreeNode object at 0x10f861710>]
 Read symbol	else
 		reduce using the production	F->['IDN']
 		push state	75
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73, 81, 75]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7cf8>, <Analyzer.TreeNode object at 0x10d0e7d30>, <Analyzer.TreeNode object at 0x10d0e74a8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e35c0>, <Analyzer.TreeNode object at 0x10f7e35f8>, <Analyzer.TreeNode object at 0x10f7e3048>]
 Read symbol	else
 		reduce using the production	T->['F']
 		push state	86
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73, 81, 86]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7cf8>, <Analyzer.TreeNode object at 0x10d0e7d30>, <Analyzer.TreeNode object at 0x10d0e7be0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e35c0>, <Analyzer.TreeNode object at 0x10f7e35f8>, <Analyzer.TreeNode object at 0x10f7e3518>]
 Read symbol	else
 		reduce using the production	E->['E', '+', 'T']
 		push state	73
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 59, 69, 73]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7908>, <Analyzer.TreeNode object at 0x10d0e79e8>, <Analyzer.TreeNode object at 0x10d0e7d68>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e31d0>, <Analyzer.TreeNode object at 0x10f7e3278>, <Analyzer.TreeNode object at 0x10f7e3668>]
 Read symbol	else
 		reduce using the production	S->['IDN', '=', 'E']
 		push state	58
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>]
 Read symbol	else
 		shift	else	and push state	68
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>]
 Read symbol	IDN
 		shift	IDN	and push state	9
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>]
 Read symbol	=
 		shift	=	and push state	14
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>]
 Read symbol	IDN
 		shift	IDN	and push state	20
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 20]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0ec080>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3908>]
 Read symbol	+
 		reduce using the production	F->['IDN']
 		push state	19
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 19]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0ec0f0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3978>]
 Read symbol	+
 		reduce using the production	T->['F']
 		push state	18
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 18]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e70b8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f861940>]
 Read symbol	+
 		reduce using the production	E->['T']
 		push state	17
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e7ac8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3358>]
 Read symbol	+
 		shift	+	and push state	33
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17, 33]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e7ac8>, <Analyzer.TreeNode object at 0x10d0e7c50>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3358>, <Analyzer.TreeNode object at 0x10f7e34a8>]
 Read symbol	IDN
 		shift	IDN	and push state	20
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17, 33, 20]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'IDN']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e7ac8>, <Analyzer.TreeNode object at 0x10d0e7c50>, <Analyzer.TreeNode object at 0x10d0e7e10>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3358>, <Analyzer.TreeNode object at 0x10f7e34a8>, <Analyzer.TreeNode object at 0x10f7e3630>]
 Read symbol	#
 		reduce using the production	F->['IDN']
 		push state	19
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17, 33, 19]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'F']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e7ac8>, <Analyzer.TreeNode object at 0x10d0e7c50>, <Analyzer.TreeNode object at 0x10d0e7ef0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3358>, <Analyzer.TreeNode object at 0x10f7e34a8>, <Analyzer.TreeNode object at 0x10f7e3710>]
 Read symbol	#
 		reduce using the production	T->['F']
 		push state	49
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17, 33, 49]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'T']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0e7ac8>, <Analyzer.TreeNode object at 0x10d0e7c50>, <Analyzer.TreeNode object at 0x10d0ec048>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3358>, <Analyzer.TreeNode object at 0x10f7e34a8>, <Analyzer.TreeNode object at 0x10f7e3828>]
 Read symbol	#
 		reduce using the production	E->['E', '+', 'T']
 		push state	17
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 9, 14, 17]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0e7f98>, <Analyzer.TreeNode object at 0x10d0e7fd0>, <Analyzer.TreeNode object at 0x10d0ec128>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3860>, <Analyzer.TreeNode object at 0x10f7e3898>, <Analyzer.TreeNode object at 0x10f7e3940>]
 Read symbol	#
 		reduce using the production	S->['IDN', '=', 'E']
 		push state	72
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 10, 15, 26, 46, 58, 68, 72]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0e7390>, <Analyzer.TreeNode object at 0x10d0e7400>, <Analyzer.TreeNode object at 0x10d0e7550>, <Analyzer.TreeNode object at 0x10d0e76a0>, <Analyzer.TreeNode object at 0x10d0e7e80>, <Analyzer.TreeNode object at 0x10d0e7f28>, <Analyzer.TreeNode object at 0x10d0ec1d0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f861cc0>, <Analyzer.TreeNode object at 0x10f861d30>, <Analyzer.TreeNode object at 0x10f861da0>, <Analyzer.TreeNode object at 0x10f861f60>, <Analyzer.TreeNode object at 0x10f7e3748>, <Analyzer.TreeNode object at 0x10f7e37f0>, <Analyzer.TreeNode object at 0x10f7e3a20>]
 Read symbol	#
 		reduce using the production	S->['if', '(', 'C', ')', 'S', 'else', 'S']
 		push state	63
 		State stack:	[0, 2, 8, 11, 16, 32, 48, 63]
 		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0e7828>, <Analyzer.TreeNode object at 0x10d0e7860>, <Analyzer.TreeNode object at 0x10d0e7208>, <Analyzer.TreeNode object at 0x10d0e7320>, <Analyzer.TreeNode object at 0x10d0ec2b0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3208>, <Analyzer.TreeNode object at 0x10f7e3240>, <Analyzer.TreeNode object at 0x10f861b00>, <Analyzer.TreeNode object at 0x10f861c50>, <Analyzer.TreeNode object at 0x10f7e3b00>]
 Read symbol	#
 		reduce using the production	S->['while', '(', 'C', ')', 'S']
 		push state	13
 		State stack:	[0, 2, 8, 13]
 		Symbol stack:	['#', 'D', 'S', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7780>, <Analyzer.TreeNode object at 0x10d0ec3c8>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f7e3160>, <Analyzer.TreeNode object at 0x10f7e3c18>]
 Read symbol	#
 		reduce using the production	S->['S', 'S']
 		push state	8
 		State stack:	[0, 2, 8]
 		Symbol stack:	['#', 'D', 'S']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7160>, <Analyzer.TreeNode object at 0x10d0e7cc0>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f861048>, <Analyzer.TreeNode object at 0x10f861ac8>]
 Read symbol	#
 		reduce using the production	P->['D', 'S']
 		push state	1
 		State stack:	[0, 1]
 		Symbol stack:	['#', 'P']
-		Forest stack:	[<Analyzer.TreeNode object at 0x10d0e7f60>]
+		Forest stack:	[<Analyzer.TreeNode object at 0x10f7e36d8>]
 Read symbol	#
 Accept! Congratulations!
-Finished in	73	steps
+Finished in	78	steps

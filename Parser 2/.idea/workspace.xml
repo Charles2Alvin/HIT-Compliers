@@ -67,23 +67,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="247" column="17" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+            <state relative-caret-position="252">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#38#205#0" />
+                <element signature="e#227#653#0" />
                 <element signature="e#398#545#0" />
                 <element signature="e#567#1396#0" />
-                <element signature="e#2886#5399#0" />
                 <element signature="e#2893#2973#0" />
                 <element signature="e#3084#3154#0" />
                 <element signature="e#3298#3598#0" />
-                <element signature="e#3979#4448#0" />
+                <element signature="e#3708#6532#0" />
+                <element signature="e#6590#6673#0" />
                 <element signature="e#4159#4808#0" />
                 <element signature="e#4427#4808#0" />
                 <element signature="e#5898#6649#0" />
                 <element signature="e#4686#4927#0" />
                 <element signature="e#5974#6286#0" />
-                <element signature="e#7339#8305#0" />
               </folding>
             </state>
           </provider>
@@ -93,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/LL1Code.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -136,6 +135,7 @@
       <find>counter</find>
       <find>Entr</find>
       <find>vars</find>
+      <find>tCount</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -295,13 +295,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13741064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57945204" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48630136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,7 +344,7 @@
     <entry file="file://$PROJECT_DIR$/LL1Code.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -393,23 +394,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="247" column="17" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+        <state relative-caret-position="252">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#38#205#0" />
+            <element signature="e#227#653#0" />
             <element signature="e#398#545#0" />
             <element signature="e#567#1396#0" />
-            <element signature="e#2886#5399#0" />
             <element signature="e#2893#2973#0" />
             <element signature="e#3084#3154#0" />
             <element signature="e#3298#3598#0" />
-            <element signature="e#3979#4448#0" />
+            <element signature="e#3708#6532#0" />
+            <element signature="e#6590#6673#0" />
             <element signature="e#4159#4808#0" />
             <element signature="e#4427#4808#0" />
             <element signature="e#5898#6649#0" />
             <element signature="e#4686#4927#0" />
             <element signature="e#5974#6286#0" />
-            <element signature="e#7339#8305#0" />
           </folding>
         </state>
       </provider>

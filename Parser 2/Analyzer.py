@@ -8,6 +8,9 @@ class Line:
         self.operand2 = operand2
         self.assign = assign
 
+    def __str__(self):
+        return '(' + self.op + ', ' + self.operand1 + ', ' + self.operand2 + ', ' + self.assign + ')'
+
 
 class Symbol:
     def __init__(self, name, type, addr):
@@ -61,7 +64,7 @@ class Analyzer:
         self.code = []
         self.Dlist = Dlist
         self.Slist = Slist
-        self.tCount = 1
+        self.count = 0      # 行号
         self.record = []
         self.table = []
 
@@ -85,7 +88,7 @@ class Analyzer:
             if node.name not in self.record:
                 self.generate(node)
         # 设置行号
-        self.setLine()
+        # self.setLine()
         # 设置变量名
         self.setVar()
         # 显示中间代码
@@ -94,6 +97,10 @@ class Analyzer:
         self.isDeclared()
         # 显示符号表
         self.showSymbols()
+        # 输出符号表到文件
+        self.outputSymbol()
+        # 输出中间代码到文件
+        self.outCode()
 
     def generate(self, root):
         flag1 = True        # 表明该节点的孩纸不包含$，没有依赖关系
@@ -115,33 +122,79 @@ class Analyzer:
             else:
                 operand1, operand2, assign = root.tuple[0], root.tuple[2], root.name
             line = Line(op, operand1, operand2, assign)
-            # line = '(' + op + ', ' + operand1 + ', ' + operand2 + ', ' + assign + ')'
+            self.count += 1
             self.code.append(line)
         elif flag2 is False:    # 孩子既有终结符也有$
-            if 'if' in root.tuple or 'while' in root.tuple:
+            if 'if' in root.tuple:
+                # 三个j语句的位置
+                j1, j2, j3 = 0, 0, 0
                 # 生成第一个跳转语句
                 op, operand1, operand2, assign = 'j'+str(root.children[2].tuple[1]), \
                                                  root.children[2].tuple[0], \
                                                  root.children[2].tuple[2], '-'
                 line = Line(op, operand1, operand2, assign)
+                self.count += 1
+
+                self.code.append(line)
+                # 设置第一个跳转语句的位置，以及跳转的目的地
+                j1 = self.count
+                j2 = j1 + 1
+
+                # 生成第二个跳转语句
+                op, operand1, operand2, assign = 'j', '-', '-', '-'
+                line = Line(op, operand1, operand2, assign)
+                self.count += 1
+                self.code.append(line)
+
+                # 生成条件成立对应的语句块
+                self.generate(root.children[4])
+
+                # 记录第三个跳转语句的位置（离开语句）
+                j3 = self.count
+
+                # 生成第三个跳转语句
+                op, operand1, operand2, assign = 'j', '-', '-', '-'
+                line = Line(op, operand1, operand2, assign)
+                self.count += 1
+                self.code.append(line)
+
+                # 设置第二个跳转语句的目的地
+                self.code[j2 - 1].assign = str(self.count)
+
+                # if -> 生成条件不成立对应的语句块
+                self.generate(root.children[6])
+                self.code[j1 - 1].assign = str(j2 + 1)
+                self.code[j3].assign = str(self.count + 1)
+            elif 'while' in root.tuple:
+                # 记录三个跳转语句的位置
+                j1, j2, j3 = 0, 0, 0
+                # 生成第一个跳转语句
+                op, operand1, operand2, assign = 'j' + str(root.children[2].tuple[1]), \
+                                                 root.children[2].tuple[0], \
+                                                 root.children[2].tuple[2], '-'
+                line = Line(op, operand1, operand2, assign)
+                self.count += 1
+                j1 = self.count
+                j2 = j1 + 1
                 self.code.append(line)
 
                 # 生成第二个跳转语句
                 op, operand1, operand2, assign = 'j', '-', '-', '-'
                 line = Line(op, operand1, operand2, assign)
+                self.count += 1
                 self.code.append(line)
 
                 # 生成条件成立对应的语句块
                 self.generate(root.children[4])
 
                 # 生成第三个跳转语句
-                op, operand1, operand2, assign = 'j', '-', '-', '-'
+                op, operand1, operand2, assign = 'j', '-', '-', str(j1)
                 line = Line(op, operand1, operand2, assign)
+                self.count += 1
                 self.code.append(line)
+                self.code[j1 - 1].assign = str(j1 + 2)
+                self.code[j2 - 1].assign = str(self.count + 1)
 
-                # if -> 生成条件不成立对应的语句块
-                if 'if' in root.tuple:
-                    self.generate(root.children[6])
             else:
                 if root.name in self.record:
                     return
@@ -149,6 +202,7 @@ class Analyzer:
                 operand1, op, operand2, assign = root.children[2].name, root.tuple[1], \
                                                  '-', root.tuple[0]
                 line = Line(op, operand1, operand2, assign)
+                self.count += 1
                 self.code.append(line)
                 self.record.append(root.name)
 
@@ -238,16 +292,27 @@ class Analyzer:
                 if item not in vars and item[0] != 't' and item != '-' \
                 and item not in unDeclared and not item.isdigit():
                     unDeclared.append(item)
-        print("\n***Variable declaration error***")
+        print("\n*** Variable declaration error ***")
         for var in unDeclared:
             print("Undeclared variable: ", var)
         for var in duplicates:
             print("Repeated declaration: ", var)
 
     def showSymbols(self):
-        print("\n***Symbol table***")
+        print("\n*** Symbol table ***")
         for symbol in self.table:
             print(symbol)
 
+    def outputSymbol(self):
+        f = open('Symbols.txt', 'w')
+        for symbol in self.table:
+            f.write(str(symbol))
+            f.write("\n")
+
+    def outCode(self):
+        f = open('IntermediateCode.txt', 'w')
+        for line in self.code:
+            f.write(str(line))
+            f.write('\n')
 
 
