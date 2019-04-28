@@ -1,7 +1,7 @@
-int i
-int j
-i = 1
-j = 2
-if i < j
-else i = j
-
+int x
+x = y + b
+while ( a < b )
+	if ( c < d )
+		x = y + z
+	else
+		y = x + x

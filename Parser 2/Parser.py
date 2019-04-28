@@ -2,6 +2,8 @@ from Grammar import *
 from Lexer import *
 import time
 from Helper import *
+from Analyzer import *
+
 
 class Parser():
     """ LR1语法分析器 """
@@ -214,10 +216,11 @@ class Parser():
 
         """ 初始化 """
         w.append(['#', '-', '-', 'end'])
-        i, step = 0, 0
-        stateStack, symbolStack, forest = [0], ['#'], []
+        i, step, counter = 0, 0, 0
+        stateStack, symbolStack, forest, Slist, Dlist = [0], ['#'], [], [], []
 
         while True:
+            # print("parsing", w[i])
             # 预处理，将数字和标识符替换为digit和IDN
             symbol = w[i][0]
             type = w[i][1]
@@ -239,8 +242,9 @@ class Parser():
                 f.write("\t\tshift\t" + str(symbol) + "\tand push state\t" + str(stateIndex) + "\n")
 
                 # 构建新的树结点
-                t = TreeNode(w[i])
+                t = TreeNode(name=w[i][0])
                 forest.append(t)
+                # print("add tree node", w[i][0])
                 i += 1
 
             elif content[0] == 'r':     # 采取归约
@@ -281,10 +285,21 @@ class Parser():
                 """ 采取语法动作 """
                 children = forest[len(forest) - length:]
                 for l in range(length):
-                    tree = forest.pop()
-                parent = TreeNode(p.left)
+                    forest.pop()
+                if len(p.right) == 1:
+                    parent = TreeNode(name=children[0].name)
+                    # print("add p node", parent.name)
+                else:
+                    parent = TreeNode(name='$'+str(counter), production=p)
+                    for child in children:
+                        parent.tuple.append(child.name)
+                    counter += 1
                 parent.children = children
                 forest.append(parent)
+                if p.left == 'S':
+                    Slist.append(parent)
+                elif p.left == 'D' and p.right != ['D', 'D']:
+                    Dlist.append(parent)
 
             elif content == 'acc':      # 采取接受
                 print("Accept! Congratulations!")
@@ -294,14 +309,12 @@ class Parser():
             f.write("\t\tState stack:\t" + str(stateStack) + "\n")
             f.write("\t\tSymbol stack:\t" + str(symbolStack) + "\n")
             f.write("\t\tForest stack:\t" + str(forest) + "\n")
-            # for tree in forest:
-            #     TreeNode.search(tree)
             step += 1
 
         # 完成语法分析
         print("Finished in", step, "steps")
         f.write("Finished in\t" + str(step) + "\tsteps\n")
-        self.forest = forest
+        self.root, self.Slist, self.Dlist = forest[0], Slist, Dlist
 
     def restInput(self, w, index):
         print("\t\tThe rest of input string:\t", end="")
@@ -352,14 +365,6 @@ class Parser():
             self.viewSet(state)
             i += 1
 
-    def viewTable(self):
-        print("Action table:")
-        for entry in self.actionTable:
-            print(entry.state, entry.symbol, entry.content)
-        print("Goto table:")
-        for entry in self.gotoTable:
-            print(entry.state, entry.symbol, entry.content)
-
     def configure(self, grammar):
         self.productions = grammar.productions
         self.startSym = grammar.startSym
@@ -367,37 +372,36 @@ class Parser():
         self.terminals = grammar.terminals
         self.firstSet = grammar.firstSet
         self.followSet = grammar.followSet
-        self.readTable()
+        # self.readTable()
 
-    def updateParse(self, w, symbolTable):
+    def updateParse(self, w):
         self.buildStates()
         # self.viewStates(self.states)
         self.buildTable()
         self.outputTable()
         self.parse(w)
-        root = self.forest[0]
-        TreeNode.search(root)
 
 
 if __name__ == "__main__":
     lexer = Lexer()
     lexer.configure('LL1Code.txt')
-    # lexer.configure('source.txt')
 
     g = Grammar()
     g.configure('LL1.txt')
-    # g.configure('MyGrammar.txt')
 
-    print("Building automata...")
+    print("\nBuilding automata...")
     t1 = time.time()
     p = Parser()
     p.configure(g)
     print("Analysis table completed in", '{:.4f}s'.format(time.time() - t1))
 
-    print("Parsing...")
+    print("\nParsing...")
     t2 = time.time()
     # p.parse(lexer.output)
-    p.updateParse(lexer.output, lexer.symbolTable)
+    p.updateParse(lexer.output)
     print("Syntactic analysis completed in", '{:.4f}s'.format(time.time() - t2))
 
-
+    print("\nAnalyzing...")
+    t3 = time.time()
+    analyzer = Analyzer(p.root, p.Dlist, p.Slist)
+    analyzer.configure()

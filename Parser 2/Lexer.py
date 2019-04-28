@@ -1,5 +1,4 @@
 import time
-import re
 class Lexer:
     def __init__(self):
         self.code = ''
@@ -27,7 +26,6 @@ class Lexer:
         self.variables = {}
         self.varCount = 0
         self.charError = False
-        self.symbolTable = []
 
     def readFile(self, path):
         f = open(path, 'r')
@@ -164,7 +162,6 @@ class Lexer:
             result = self.recogIdentifier(word)
             if result is True:
                 self.output.append([word, "IDN", word, line])
-                self.symbolTable.append([word, '0', '0x0000'])
                 self.varCount += 1
             else:
                 if result != 0:
@@ -187,12 +184,6 @@ class Lexer:
         for term in self.output:
             f.write(str(term[0]) + "\t<" + str(term[1]) + "," + str(term[2]) + ">\t" + str(term[3]) + "\n")
         f.close()
-        # 输出symbol表到文件
-        print(self.symbolTable)
-        f = open('Symbols.txt', 'w')
-        for term in self.symbolTable:
-            f.write(term[0] + "\t" + term[1] + "\t" + term[2] + "\n")
-        f.close()
 
     def configure(self, path):
         print("Conducting lexical analysis...")
@@ -201,7 +192,7 @@ class Lexer:
         self.preprocess()
         self.parse()
         self.setTable()
-        print("Lexical analysis completed in", '{:.4f}ms'.format(1000*(time.time() - t)))
+        print("Lexical analysis completed in", '{:.4f}s'.format(1000*(time.time() - t)))
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ P -> D S
 D -> D D
 D -> type IDN 
 type -> int
+type -> double
 type -> float
 # 表达式语句
 S -> S S
@@ -21,5 +22,7 @@ C -> E relop E
 relop -> >
 relop -> <
 # 分支结构
-S -> if C else S
+S -> if ( C ) S else S
+# 循环结构
+S -> while ( C ) S
 
