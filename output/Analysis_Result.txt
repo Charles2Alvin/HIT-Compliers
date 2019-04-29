@@ -1,0 +1,523 @@
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 4]
+		Symbol stack:	['#', 'int']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207ba8>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 3]
+		Symbol stack:	['#', 'type']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207a20>]
+Read symbol	IDN
+		shift	IDN	and push state	11
+		State stack:	[0, 3, 11]
+		Symbol stack:	['#', 'type', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207a20>, <semantic_analyzer.TreeNode object at 0x110207978>]
+Read symbol	int
+		reduce using the production	D->['type', 'IDN']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['#', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>]
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 2, 4]
+		Symbol stack:	['#', 'D', 'int']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x110207828>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 2, 3]
+		Symbol stack:	['#', 'D', 'type']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x110207748>]
+Read symbol	IDN
+		shift	IDN	and push state	11
+		State stack:	[0, 2, 3, 11]
+		Symbol stack:	['#', 'D', 'type', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x110207748>, <semantic_analyzer.TreeNode object at 0x1102076d8>]
+Read symbol	double
+		reduce using the production	D->['type', 'IDN']
+		push state	6
+		State stack:	[0, 2, 6]
+		Symbol stack:	['#', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>]
+Read symbol	double
+		shift	double	and push state	5
+		State stack:	[0, 2, 6, 5]
+		Symbol stack:	['#', 'D', 'D', 'double']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x1102075c0>]
+Read symbol	IDN
+		reduce using the production	type->['double']
+		push state	3
+		State stack:	[0, 2, 6, 3]
+		Symbol stack:	['#', 'D', 'D', 'type']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x1102074a8>]
+Read symbol	IDN
+		shift	IDN	and push state	11
+		State stack:	[0, 2, 6, 3, 11]
+		Symbol stack:	['#', 'D', 'D', 'type', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x1102074a8>, <semantic_analyzer.TreeNode object at 0x110207438>]
+Read symbol	int
+		reduce using the production	D->['type', 'IDN']
+		push state	6
+		State stack:	[0, 2, 6, 6]
+		Symbol stack:	['#', 'D', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>]
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 2, 6, 6, 4]
+		Symbol stack:	['#', 'D', 'D', 'D', 'int']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207320>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 2, 6, 6, 3]
+		Symbol stack:	['#', 'D', 'D', 'D', 'type']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207518>]
+Read symbol	IDN
+		shift	IDN	and push state	11
+		State stack:	[0, 2, 6, 6, 3, 11]
+		Symbol stack:	['#', 'D', 'D', 'D', 'type', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207518>, <semantic_analyzer.TreeNode object at 0x110207278>]
+Read symbol	int
+		reduce using the production	D->['type', 'IDN']
+		push state	6
+		State stack:	[0, 2, 6, 6, 6]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207198>]
+Read symbol	int
+		shift	int	and push state	4
+		State stack:	[0, 2, 6, 6, 6, 4]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D', 'int']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207198>, <semantic_analyzer.TreeNode object at 0x110207160>]
+Read symbol	IDN
+		reduce using the production	type->['int']
+		push state	3
+		State stack:	[0, 2, 6, 6, 6, 3]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D', 'type']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207198>, <semantic_analyzer.TreeNode object at 0x1102070b8>]
+Read symbol	IDN
+		shift	IDN	and push state	11
+		State stack:	[0, 2, 6, 6, 6, 3, 11]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D', 'type', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207198>, <semantic_analyzer.TreeNode object at 0x1102070b8>, <semantic_analyzer.TreeNode object at 0x110207048>]
+Read symbol	IDN
+		reduce using the production	D->['type', 'IDN']
+		push state	6
+		State stack:	[0, 2, 6, 6, 6, 6]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x110207198>, <semantic_analyzer.TreeNode object at 0x1101fff60>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	6
+		State stack:	[0, 2, 6, 6, 6]
+		Symbol stack:	['#', 'D', 'D', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x110207358>, <semantic_analyzer.TreeNode object at 0x1101ffe80>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	6
+		State stack:	[0, 2, 6, 6]
+		Symbol stack:	['#', 'D', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1102075f8>, <semantic_analyzer.TreeNode object at 0x1101ffd30>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	6
+		State stack:	[0, 2, 6]
+		Symbol stack:	['#', 'D', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x110207860>, <semantic_analyzer.TreeNode object at 0x1101ffcf8>]
+Read symbol	IDN
+		reduce using the production	D->['D', 'D']
+		push state	2
+		State stack:	[0, 2]
+		Symbol stack:	['#', 'D']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>]
+Read symbol	IDN
+		shift	IDN	and push state	8
+		State stack:	[0, 2, 8]
+		Symbol stack:	['#', 'D', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>]
+Read symbol	=
+		shift	=	and push state	13
+		State stack:	[0, 2, 8, 13]
+		Symbol stack:	['#', 'D', 'IDN', '=']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>]
+Read symbol	IDN
+		shift	IDN	and push state	19
+		State stack:	[0, 2, 8, 13, 19]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x1101ffa58>]
+Read symbol	+
+		reduce using the production	F->['IDN']
+		push state	18
+		State stack:	[0, 2, 8, 13, 18]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207b70>]
+Read symbol	+
+		reduce using the production	T->['F']
+		push state	17
+		State stack:	[0, 2, 8, 13, 17]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x1102079e8>]
+Read symbol	+
+		reduce using the production	E->['T']
+		push state	16
+		State stack:	[0, 2, 8, 13, 16]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207940>]
+Read symbol	+
+		shift	+	and push state	32
+		State stack:	[0, 2, 8, 13, 16, 32]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207940>, <semantic_analyzer.TreeNode object at 0x1102077f0>]
+Read symbol	IDN
+		shift	IDN	and push state	19
+		State stack:	[0, 2, 8, 13, 16, 32, 19]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207940>, <semantic_analyzer.TreeNode object at 0x1102077f0>, <semantic_analyzer.TreeNode object at 0x110207780>]
+Read symbol	while
+		reduce using the production	F->['IDN']
+		push state	18
+		State stack:	[0, 2, 8, 13, 16, 32, 18]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207940>, <semantic_analyzer.TreeNode object at 0x1102077f0>, <semantic_analyzer.TreeNode object at 0x1102076a0>]
+Read symbol	while
+		reduce using the production	T->['F']
+		push state	48
+		State stack:	[0, 2, 8, 13, 16, 32, 48]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E', '+', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207940>, <semantic_analyzer.TreeNode object at 0x1102077f0>, <semantic_analyzer.TreeNode object at 0x110207470>]
+Read symbol	while
+		reduce using the production	E->['E', '+', 'T']
+		push state	16
+		State stack:	[0, 2, 8, 13, 16]
+		Symbol stack:	['#', 'D', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffbe0>, <semantic_analyzer.TreeNode object at 0x1101ffac8>, <semantic_analyzer.TreeNode object at 0x110207240>]
+Read symbol	while
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>]
+Read symbol	while
+		shift	while	and push state	10
+		State stack:	[0, 2, 7, 10]
+		Symbol stack:	['#', 'D', 'S', 'while']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>]
+Read symbol	(
+		shift	(	and push state	15
+		State stack:	[0, 2, 7, 10, 15]
+		Symbol stack:	['#', 'D', 'S', 'while', '(']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>]
+Read symbol	IDN
+		shift	IDN	and push state	26
+		State stack:	[0, 2, 7, 10, 15, 26]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ffb00>]
+Read symbol	<
+		reduce using the production	F->['IDN']
+		push state	24
+		State stack:	[0, 2, 7, 10, 15, 24]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ffa90>]
+Read symbol	<
+		reduce using the production	T->['F']
+		push state	23
+		State stack:	[0, 2, 7, 10, 15, 23]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff9e8>]
+Read symbol	<
+		reduce using the production	E->['T']
+		push state	22
+		State stack:	[0, 2, 7, 10, 15, 22]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>]
+Read symbol	<
+		shift	<	and push state	43
+		State stack:	[0, 2, 7, 10, 15, 22, 43]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', '<']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff908>]
+Read symbol	IDN
+		reduce using the production	relop->['<']
+		push state	40
+		State stack:	[0, 2, 7, 10, 15, 22, 40]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff898>]
+Read symbol	IDN
+		shift	IDN	and push state	37
+		State stack:	[0, 2, 7, 10, 15, 22, 40, 37]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff898>, <semantic_analyzer.TreeNode object at 0x1101ff7f0>]
+Read symbol	)
+		reduce using the production	F->['IDN']
+		push state	36
+		State stack:	[0, 2, 7, 10, 15, 22, 40, 36]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff898>, <semantic_analyzer.TreeNode object at 0x1101ff7b8>]
+Read symbol	)
+		reduce using the production	T->['F']
+		push state	35
+		State stack:	[0, 2, 7, 10, 15, 22, 40, 35]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff898>, <semantic_analyzer.TreeNode object at 0x1101ff748>]
+Read symbol	)
+		reduce using the production	E->['T']
+		push state	54
+		State stack:	[0, 2, 7, 10, 15, 22, 40, 54]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'E', 'relop', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x1101ff978>, <semantic_analyzer.TreeNode object at 0x1101ff898>, <semantic_analyzer.TreeNode object at 0x110207a58>]
+Read symbol	)
+		reduce using the production	C->['E', 'relop', 'E']
+		push state	31
+		State stack:	[0, 2, 7, 10, 15, 31]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>]
+Read symbol	)
+		shift	)	and push state	47
+		State stack:	[0, 2, 7, 10, 15, 31, 47]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>]
+Read symbol	if
+		shift	if	and push state	9
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>]
+Read symbol	(
+		shift	(	and push state	14
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>]
+Read symbol	IDN
+		shift	IDN	and push state	26
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 26]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1102070f0>]
+Read symbol	<
+		reduce using the production	F->['IDN']
+		push state	24
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 24]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ffe10>]
+Read symbol	<
+		reduce using the production	T->['F']
+		push state	23
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 23]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ffa20>]
+Read symbol	<
+		reduce using the production	E->['T']
+		push state	22
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>]
+Read symbol	<
+		shift	<	and push state	43
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 43]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', '<']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff860>]
+Read symbol	IDN
+		reduce using the production	relop->['<']
+		push state	40
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 40]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff780>]
+Read symbol	IDN
+		shift	IDN	and push state	37
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 40, 37]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff780>, <semantic_analyzer.TreeNode object at 0x1101ff6a0>]
+Read symbol	)
+		reduce using the production	F->['IDN']
+		push state	36
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 40, 36]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff780>, <semantic_analyzer.TreeNode object at 0x1101ff668>]
+Read symbol	)
+		reduce using the production	T->['F']
+		push state	35
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 40, 35]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff780>, <semantic_analyzer.TreeNode object at 0x1102079b0>]
+Read symbol	)
+		reduce using the production	E->['T']
+		push state	54
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 22, 40, 54]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'E', 'relop', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff940>, <semantic_analyzer.TreeNode object at 0x1101ff780>, <semantic_analyzer.TreeNode object at 0x110207128>]
+Read symbol	)
+		reduce using the production	C->['E', 'relop', 'E']
+		push state	25
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>]
+Read symbol	)
+		shift	)	and push state	45
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>]
+Read symbol	IDN
+		shift	IDN	and push state	58
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>]
+Read symbol	=
+		shift	=	and push state	68
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>]
+Read symbol	IDN
+		shift	IDN	and push state	75
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 75]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff550>]
+Read symbol	+
+		reduce using the production	F->['IDN']
+		push state	74
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 74]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff518>]
+Read symbol	+
+		reduce using the production	T->['F']
+		push state	73
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 73]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff4a8>]
+Read symbol	+
+		reduce using the production	E->['T']
+		push state	72
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff438>]
+Read symbol	+
+		shift	+	and push state	80
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72, 80]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff438>, <semantic_analyzer.TreeNode object at 0x110207588>]
+Read symbol	IDN
+		shift	IDN	and push state	75
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72, 80, 75]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff438>, <semantic_analyzer.TreeNode object at 0x110207588>, <semantic_analyzer.TreeNode object at 0x1101ff710>]
+Read symbol	else
+		reduce using the production	F->['IDN']
+		push state	74
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72, 80, 74]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff438>, <semantic_analyzer.TreeNode object at 0x110207588>, <semantic_analyzer.TreeNode object at 0x1101ff588>]
+Read symbol	else
+		reduce using the production	T->['F']
+		push state	85
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72, 80, 85]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E', '+', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff438>, <semantic_analyzer.TreeNode object at 0x110207588>, <semantic_analyzer.TreeNode object at 0x1101ff400>]
+Read symbol	else
+		reduce using the production	E->['E', '+', 'T']
+		push state	72
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 58, 68, 72]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff5f8>, <semantic_analyzer.TreeNode object at 0x1101ff5c0>, <semantic_analyzer.TreeNode object at 0x1101ff2e8>]
+Read symbol	else
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	57
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>]
+Read symbol	else
+		shift	else	and push state	67
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>]
+Read symbol	IDN
+		shift	IDN	and push state	8
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>]
+Read symbol	=
+		shift	=	and push state	13
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>]
+Read symbol	IDN
+		shift	IDN	and push state	19
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 19]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff630>]
+Read symbol	+
+		reduce using the production	F->['IDN']
+		push state	18
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 18]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff4e0>]
+Read symbol	+
+		reduce using the production	T->['F']
+		push state	17
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 17]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff3c8>]
+Read symbol	+
+		reduce using the production	E->['T']
+		push state	16
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff2b0>]
+Read symbol	+
+		shift	+	and push state	32
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16, 32]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff2b0>, <semantic_analyzer.TreeNode object at 0x1101ff198>]
+Read symbol	IDN
+		shift	IDN	and push state	19
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16, 32, 19]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'IDN']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff2b0>, <semantic_analyzer.TreeNode object at 0x1101ff198>, <semantic_analyzer.TreeNode object at 0x1101ff0f0>]
+Read symbol	#
+		reduce using the production	F->['IDN']
+		push state	18
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16, 32, 18]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'F']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff2b0>, <semantic_analyzer.TreeNode object at 0x1101ff198>, <semantic_analyzer.TreeNode object at 0x1101ff048>]
+Read symbol	#
+		reduce using the production	T->['F']
+		push state	48
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16, 32, 48]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E', '+', 'T']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff2b0>, <semantic_analyzer.TreeNode object at 0x1101ff198>, <semantic_analyzer.TreeNode object at 0x11019e3c8>]
+Read symbol	#
+		reduce using the production	E->['E', '+', 'T']
+		push state	16
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 8, 13, 16]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'IDN', '=', 'E']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x1101ff0b8>, <semantic_analyzer.TreeNode object at 0x1101ff080>, <semantic_analyzer.TreeNode object at 0x1101ff390>]
+Read symbol	#
+		reduce using the production	S->['IDN', '=', 'E']
+		push state	71
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 9, 14, 25, 45, 57, 67, 71]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'if', '(', 'C', ')', 'S', 'else', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x110207400>, <semantic_analyzer.TreeNode object at 0x1102072e8>, <semantic_analyzer.TreeNode object at 0x1101ff828>, <semantic_analyzer.TreeNode object at 0x1101ff6d8>, <semantic_analyzer.TreeNode object at 0x1101ff1d0>, <semantic_analyzer.TreeNode object at 0x1101ff128>, <semantic_analyzer.TreeNode object at 0x11019e358>]
+Read symbol	#
+		reduce using the production	S->['if', '(', 'C', ')', 'S', 'else', 'S']
+		push state	62
+		State stack:	[0, 2, 7, 10, 15, 31, 47, 62]
+		Symbol stack:	['#', 'D', 'S', 'while', '(', 'C', ')', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x1101ffba8>, <semantic_analyzer.TreeNode object at 0x1101ffc88>, <semantic_analyzer.TreeNode object at 0x110207710>, <semantic_analyzer.TreeNode object at 0x110207550>, <semantic_analyzer.TreeNode object at 0x11019ee48>]
+Read symbol	#
+		reduce using the production	S->['while', '(', 'C', ')', 'S']
+		push state	12
+		State stack:	[0, 2, 7, 12]
+		Symbol stack:	['#', 'D', 'S', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x1101ffef0>, <semantic_analyzer.TreeNode object at 0x11019ef28>]
+Read symbol	#
+		reduce using the production	S->['S', 'S']
+		push state	7
+		State stack:	[0, 2, 7]
+		Symbol stack:	['#', 'D', 'S']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x1101ffc18>, <semantic_analyzer.TreeNode object at 0x11019eeb8>]
+Read symbol	#
+		reduce using the production	P->['D', 'S']
+		push state	1
+		State stack:	[0, 1]
+		Symbol stack:	['#', 'P']
+		Forest stack:	[<semantic_analyzer.TreeNode object at 0x11019edd8>]
+Read symbol	#
+Accept! Congratulations!
+Finished in	93	steps

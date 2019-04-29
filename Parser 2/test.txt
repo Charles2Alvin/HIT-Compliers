@@ -1,8 +1,0 @@
-class QuickSort {
-	int array;
-	int sort() { 
-		a = -1 * -2; 
-	}
-
-}
-

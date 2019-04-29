@@ -1,0 +1,314 @@
+0	int	s	{'shift_state': 4}
+0	double	s	{'shift_state': 5}
+1	#	acc	{}
+2	IDN	s	{'shift_state': 8}
+2	int	s	{'shift_state': 4}
+2	double	s	{'shift_state': 5}
+2	if	s	{'shift_state': 9}
+2	while	s	{'shift_state': 10}
+3	IDN	s	{'shift_state': 11}
+4	IDN	r	{'left': 'type', 'right': ['int']}
+5	IDN	r	{'left': 'type', 'right': ['double']}
+6	IDN	r	{'left': 'D', 'right': ['D', 'D']}
+6	int	s	{'shift_state': 4}
+6	double	s	{'shift_state': 5}
+6	if	r	{'left': 'D', 'right': ['D', 'D']}
+6	while	r	{'left': 'D', 'right': ['D', 'D']}
+7	IDN	s	{'shift_state': 8}
+7	if	s	{'shift_state': 9}
+7	while	s	{'shift_state': 10}
+7	#	r	{'left': 'P', 'right': ['D', 'S']}
+8	=	s	{'shift_state': 13}
+9	(	s	{'shift_state': 14}
+10	(	s	{'shift_state': 15}
+11	IDN	r	{'left': 'D', 'right': ['type', 'IDN']}
+11	int	r	{'left': 'D', 'right': ['type', 'IDN']}
+11	double	r	{'left': 'D', 'right': ['type', 'IDN']}
+11	if	r	{'left': 'D', 'right': ['type', 'IDN']}
+11	while	r	{'left': 'D', 'right': ['type', 'IDN']}
+12	IDN	s	{'shift_state': 8}
+12	if	s	{'shift_state': 9}
+12	while	s	{'shift_state': 10}
+12	#	r	{'left': 'S', 'right': ['S', 'S']}
+13	IDN	s	{'shift_state': 19}
+13	(	s	{'shift_state': 20}
+13	digit	s	{'shift_state': 21}
+14	IDN	s	{'shift_state': 26}
+14	(	s	{'shift_state': 27}
+14	digit	s	{'shift_state': 28}
+14	true	s	{'shift_state': 29}
+14	false	s	{'shift_state': 30}
+15	IDN	s	{'shift_state': 26}
+15	(	s	{'shift_state': 27}
+15	digit	s	{'shift_state': 28}
+15	true	s	{'shift_state': 29}
+15	false	s	{'shift_state': 30}
+16	IDN	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+16	+	s	{'shift_state': 32}
+16	if	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+16	while	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+16	#	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+17	IDN	r	{'left': 'E', 'right': ['T']}
+17	+	r	{'left': 'E', 'right': ['T']}
+17	*	s	{'shift_state': 33}
+17	if	r	{'left': 'E', 'right': ['T']}
+17	while	r	{'left': 'E', 'right': ['T']}
+17	#	r	{'left': 'E', 'right': ['T']}
+18	IDN	r	{'left': 'T', 'right': ['F']}
+18	+	r	{'left': 'T', 'right': ['F']}
+18	*	r	{'left': 'T', 'right': ['F']}
+18	if	r	{'left': 'T', 'right': ['F']}
+18	while	r	{'left': 'T', 'right': ['F']}
+18	#	r	{'left': 'T', 'right': ['F']}
+19	IDN	r	{'left': 'F', 'right': ['IDN']}
+19	+	r	{'left': 'F', 'right': ['IDN']}
+19	*	r	{'left': 'F', 'right': ['IDN']}
+19	if	r	{'left': 'F', 'right': ['IDN']}
+19	while	r	{'left': 'F', 'right': ['IDN']}
+19	#	r	{'left': 'F', 'right': ['IDN']}
+20	IDN	s	{'shift_state': 37}
+20	(	s	{'shift_state': 38}
+20	digit	s	{'shift_state': 39}
+21	IDN	r	{'left': 'F', 'right': ['digit']}
+21	+	r	{'left': 'F', 'right': ['digit']}
+21	*	r	{'left': 'F', 'right': ['digit']}
+21	if	r	{'left': 'F', 'right': ['digit']}
+21	while	r	{'left': 'F', 'right': ['digit']}
+21	#	r	{'left': 'F', 'right': ['digit']}
+22	+	s	{'shift_state': 41}
+22	>	s	{'shift_state': 42}
+22	<	s	{'shift_state': 43}
+23	+	r	{'left': 'E', 'right': ['T']}
+23	*	s	{'shift_state': 44}
+23	>	r	{'left': 'E', 'right': ['T']}
+23	<	r	{'left': 'E', 'right': ['T']}
+24	+	r	{'left': 'T', 'right': ['F']}
+24	*	r	{'left': 'T', 'right': ['F']}
+24	>	r	{'left': 'T', 'right': ['F']}
+24	<	r	{'left': 'T', 'right': ['F']}
+25	)	s	{'shift_state': 45}
+26	+	r	{'left': 'F', 'right': ['IDN']}
+26	*	r	{'left': 'F', 'right': ['IDN']}
+26	>	r	{'left': 'F', 'right': ['IDN']}
+26	<	r	{'left': 'F', 'right': ['IDN']}
+27	IDN	s	{'shift_state': 37}
+27	(	s	{'shift_state': 38}
+27	digit	s	{'shift_state': 39}
+28	+	r	{'left': 'F', 'right': ['digit']}
+28	*	r	{'left': 'F', 'right': ['digit']}
+28	>	r	{'left': 'F', 'right': ['digit']}
+28	<	r	{'left': 'F', 'right': ['digit']}
+29	)	r	{'left': 'C', 'right': ['true']}
+30	)	r	{'left': 'C', 'right': ['false']}
+31	)	s	{'shift_state': 47}
+32	IDN	s	{'shift_state': 19}
+32	(	s	{'shift_state': 20}
+32	digit	s	{'shift_state': 21}
+33	IDN	s	{'shift_state': 19}
+33	(	s	{'shift_state': 20}
+33	digit	s	{'shift_state': 21}
+34	+	s	{'shift_state': 50}
+34	)	s	{'shift_state': 51}
+35	+	r	{'left': 'E', 'right': ['T']}
+35	*	s	{'shift_state': 52}
+35	)	r	{'left': 'E', 'right': ['T']}
+36	+	r	{'left': 'T', 'right': ['F']}
+36	*	r	{'left': 'T', 'right': ['F']}
+36	)	r	{'left': 'T', 'right': ['F']}
+37	+	r	{'left': 'F', 'right': ['IDN']}
+37	*	r	{'left': 'F', 'right': ['IDN']}
+37	)	r	{'left': 'F', 'right': ['IDN']}
+38	IDN	s	{'shift_state': 37}
+38	(	s	{'shift_state': 38}
+38	digit	s	{'shift_state': 39}
+39	+	r	{'left': 'F', 'right': ['digit']}
+39	*	r	{'left': 'F', 'right': ['digit']}
+39	)	r	{'left': 'F', 'right': ['digit']}
+40	IDN	s	{'shift_state': 37}
+40	(	s	{'shift_state': 38}
+40	digit	s	{'shift_state': 39}
+41	IDN	s	{'shift_state': 26}
+41	(	s	{'shift_state': 27}
+41	digit	s	{'shift_state': 28}
+42	IDN	r	{'left': 'relop', 'right': ['>']}
+42	(	r	{'left': 'relop', 'right': ['>']}
+42	digit	r	{'left': 'relop', 'right': ['>']}
+43	IDN	r	{'left': 'relop', 'right': ['<']}
+43	(	r	{'left': 'relop', 'right': ['<']}
+43	digit	r	{'left': 'relop', 'right': ['<']}
+44	IDN	s	{'shift_state': 26}
+44	(	s	{'shift_state': 27}
+44	digit	s	{'shift_state': 28}
+45	IDN	s	{'shift_state': 58}
+45	if	s	{'shift_state': 59}
+45	while	s	{'shift_state': 60}
+46	+	s	{'shift_state': 50}
+46	)	s	{'shift_state': 61}
+47	IDN	s	{'shift_state': 8}
+47	if	s	{'shift_state': 9}
+47	while	s	{'shift_state': 10}
+48	IDN	r	{'left': 'E', 'right': ['E', '+', 'T']}
+48	+	r	{'left': 'E', 'right': ['E', '+', 'T']}
+48	*	s	{'shift_state': 33}
+48	if	r	{'left': 'E', 'right': ['E', '+', 'T']}
+48	while	r	{'left': 'E', 'right': ['E', '+', 'T']}
+48	#	r	{'left': 'E', 'right': ['E', '+', 'T']}
+49	IDN	r	{'left': 'T', 'right': ['T', '*', 'F']}
+49	+	r	{'left': 'T', 'right': ['T', '*', 'F']}
+49	*	r	{'left': 'T', 'right': ['T', '*', 'F']}
+49	if	r	{'left': 'T', 'right': ['T', '*', 'F']}
+49	while	r	{'left': 'T', 'right': ['T', '*', 'F']}
+49	#	r	{'left': 'T', 'right': ['T', '*', 'F']}
+50	IDN	s	{'shift_state': 37}
+50	(	s	{'shift_state': 38}
+50	digit	s	{'shift_state': 39}
+51	IDN	r	{'left': 'F', 'right': ['(', 'E', ')']}
+51	+	r	{'left': 'F', 'right': ['(', 'E', ')']}
+51	*	r	{'left': 'F', 'right': ['(', 'E', ')']}
+51	if	r	{'left': 'F', 'right': ['(', 'E', ')']}
+51	while	r	{'left': 'F', 'right': ['(', 'E', ')']}
+51	#	r	{'left': 'F', 'right': ['(', 'E', ')']}
+52	IDN	s	{'shift_state': 37}
+52	(	s	{'shift_state': 38}
+52	digit	s	{'shift_state': 39}
+53	+	s	{'shift_state': 50}
+53	)	s	{'shift_state': 65}
+54	+	s	{'shift_state': 50}
+54	)	r	{'left': 'C', 'right': ['E', 'relop', 'E']}
+55	+	r	{'left': 'E', 'right': ['E', '+', 'T']}
+55	*	s	{'shift_state': 44}
+55	>	r	{'left': 'E', 'right': ['E', '+', 'T']}
+55	<	r	{'left': 'E', 'right': ['E', '+', 'T']}
+56	+	r	{'left': 'T', 'right': ['T', '*', 'F']}
+56	*	r	{'left': 'T', 'right': ['T', '*', 'F']}
+56	>	r	{'left': 'T', 'right': ['T', '*', 'F']}
+56	<	r	{'left': 'T', 'right': ['T', '*', 'F']}
+57	IDN	s	{'shift_state': 58}
+57	if	s	{'shift_state': 59}
+57	else	s	{'shift_state': 67}
+57	while	s	{'shift_state': 60}
+58	=	s	{'shift_state': 68}
+59	(	s	{'shift_state': 69}
+60	(	s	{'shift_state': 70}
+61	+	r	{'left': 'F', 'right': ['(', 'E', ')']}
+61	*	r	{'left': 'F', 'right': ['(', 'E', ')']}
+61	>	r	{'left': 'F', 'right': ['(', 'E', ')']}
+61	<	r	{'left': 'F', 'right': ['(', 'E', ')']}
+62	IDN	s	{'shift_state': 8}
+62	if	s	{'shift_state': 9}
+62	while	s	{'shift_state': 10}
+62	#	r	{'left': 'S', 'right': ['while', '(', 'C', ')', 'S']}
+63	+	r	{'left': 'E', 'right': ['E', '+', 'T']}
+63	*	s	{'shift_state': 52}
+63	)	r	{'left': 'E', 'right': ['E', '+', 'T']}
+64	+	r	{'left': 'T', 'right': ['T', '*', 'F']}
+64	*	r	{'left': 'T', 'right': ['T', '*', 'F']}
+64	)	r	{'left': 'T', 'right': ['T', '*', 'F']}
+65	+	r	{'left': 'F', 'right': ['(', 'E', ')']}
+65	*	r	{'left': 'F', 'right': ['(', 'E', ')']}
+65	)	r	{'left': 'F', 'right': ['(', 'E', ')']}
+66	IDN	s	{'shift_state': 58}
+66	if	s	{'shift_state': 59}
+66	else	r	{'left': 'S', 'right': ['S', 'S']}
+66	while	s	{'shift_state': 60}
+67	IDN	s	{'shift_state': 8}
+67	if	s	{'shift_state': 9}
+67	while	s	{'shift_state': 10}
+68	IDN	s	{'shift_state': 75}
+68	(	s	{'shift_state': 76}
+68	digit	s	{'shift_state': 77}
+69	IDN	s	{'shift_state': 26}
+69	(	s	{'shift_state': 27}
+69	digit	s	{'shift_state': 28}
+69	true	s	{'shift_state': 29}
+69	false	s	{'shift_state': 30}
+70	IDN	s	{'shift_state': 26}
+70	(	s	{'shift_state': 27}
+70	digit	s	{'shift_state': 28}
+70	true	s	{'shift_state': 29}
+70	false	s	{'shift_state': 30}
+71	IDN	s	{'shift_state': 8}
+71	if	s	{'shift_state': 9}
+71	while	s	{'shift_state': 10}
+71	#	r	{'left': 'S', 'right': ['if', '(', 'C', ')', 'S', 'else', 'S']}
+72	IDN	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+72	+	s	{'shift_state': 80}
+72	if	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+72	else	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+72	while	r	{'left': 'S', 'right': ['IDN', '=', 'E']}
+73	IDN	r	{'left': 'E', 'right': ['T']}
+73	+	r	{'left': 'E', 'right': ['T']}
+73	*	s	{'shift_state': 81}
+73	if	r	{'left': 'E', 'right': ['T']}
+73	else	r	{'left': 'E', 'right': ['T']}
+73	while	r	{'left': 'E', 'right': ['T']}
+74	IDN	r	{'left': 'T', 'right': ['F']}
+74	+	r	{'left': 'T', 'right': ['F']}
+74	*	r	{'left': 'T', 'right': ['F']}
+74	if	r	{'left': 'T', 'right': ['F']}
+74	else	r	{'left': 'T', 'right': ['F']}
+74	while	r	{'left': 'T', 'right': ['F']}
+75	IDN	r	{'left': 'F', 'right': ['IDN']}
+75	+	r	{'left': 'F', 'right': ['IDN']}
+75	*	r	{'left': 'F', 'right': ['IDN']}
+75	if	r	{'left': 'F', 'right': ['IDN']}
+75	else	r	{'left': 'F', 'right': ['IDN']}
+75	while	r	{'left': 'F', 'right': ['IDN']}
+76	IDN	s	{'shift_state': 37}
+76	(	s	{'shift_state': 38}
+76	digit	s	{'shift_state': 39}
+77	IDN	r	{'left': 'F', 'right': ['digit']}
+77	+	r	{'left': 'F', 'right': ['digit']}
+77	*	r	{'left': 'F', 'right': ['digit']}
+77	if	r	{'left': 'F', 'right': ['digit']}
+77	else	r	{'left': 'F', 'right': ['digit']}
+77	while	r	{'left': 'F', 'right': ['digit']}
+78	)	s	{'shift_state': 83}
+79	)	s	{'shift_state': 84}
+80	IDN	s	{'shift_state': 75}
+80	(	s	{'shift_state': 76}
+80	digit	s	{'shift_state': 77}
+81	IDN	s	{'shift_state': 75}
+81	(	s	{'shift_state': 76}
+81	digit	s	{'shift_state': 77}
+82	+	s	{'shift_state': 50}
+82	)	s	{'shift_state': 87}
+83	IDN	s	{'shift_state': 58}
+83	if	s	{'shift_state': 59}
+83	while	s	{'shift_state': 60}
+84	IDN	s	{'shift_state': 58}
+84	if	s	{'shift_state': 59}
+84	while	s	{'shift_state': 60}
+85	IDN	r	{'left': 'E', 'right': ['E', '+', 'T']}
+85	+	r	{'left': 'E', 'right': ['E', '+', 'T']}
+85	*	s	{'shift_state': 81}
+85	if	r	{'left': 'E', 'right': ['E', '+', 'T']}
+85	else	r	{'left': 'E', 'right': ['E', '+', 'T']}
+85	while	r	{'left': 'E', 'right': ['E', '+', 'T']}
+86	IDN	r	{'left': 'T', 'right': ['T', '*', 'F']}
+86	+	r	{'left': 'T', 'right': ['T', '*', 'F']}
+86	*	r	{'left': 'T', 'right': ['T', '*', 'F']}
+86	if	r	{'left': 'T', 'right': ['T', '*', 'F']}
+86	else	r	{'left': 'T', 'right': ['T', '*', 'F']}
+86	while	r	{'left': 'T', 'right': ['T', '*', 'F']}
+87	IDN	r	{'left': 'F', 'right': ['(', 'E', ')']}
+87	+	r	{'left': 'F', 'right': ['(', 'E', ')']}
+87	*	r	{'left': 'F', 'right': ['(', 'E', ')']}
+87	if	r	{'left': 'F', 'right': ['(', 'E', ')']}
+87	else	r	{'left': 'F', 'right': ['(', 'E', ')']}
+87	while	r	{'left': 'F', 'right': ['(', 'E', ')']}
+88	IDN	s	{'shift_state': 58}
+88	if	s	{'shift_state': 59}
+88	else	s	{'shift_state': 90}
+88	while	s	{'shift_state': 60}
+89	IDN	s	{'shift_state': 58}
+89	if	s	{'shift_state': 59}
+89	else	r	{'left': 'S', 'right': ['while', '(', 'C', ')', 'S']}
+89	while	s	{'shift_state': 60}
+90	IDN	s	{'shift_state': 58}
+90	if	s	{'shift_state': 59}
+90	while	s	{'shift_state': 60}
+91	IDN	s	{'shift_state': 58}
+91	if	s	{'shift_state': 59}
+91	else	r	{'left': 'S', 'right': ['if', '(', 'C', ')', 'S', 'else', 'S']}
+91	while	s	{'shift_state': 60}

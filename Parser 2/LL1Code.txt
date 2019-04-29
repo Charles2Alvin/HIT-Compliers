@@ -1,8 +1,0 @@
-int x
-int y
-x = y + b
-while ( a < b )
-	if ( c < d )
-		x = y + z
-	else
-		y = x + x
