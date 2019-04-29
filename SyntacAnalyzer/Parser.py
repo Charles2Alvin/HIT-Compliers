@@ -1,6 +1,5 @@
-from Grammar import *
-from Lexer import *
-import time
+from Analyzer import *
+import collections
 
 class Parser():
     """ LR1语法分析器 """
@@ -15,6 +14,7 @@ class Parser():
         self.table = []
         self.actionTable = []
         self.gotoTable = []
+        self.root = ''
 
     def build_automata(self):
         """
@@ -31,11 +31,11 @@ class Parser():
             flag = False
             for state in automata:
                 for symbol in self.nonterminals + self.terminals:
-                    new_set = self.goto(state, symbol)
-                    if len(new_set) == 0:      # the state goes nowhere with the symbol
+                    new_state = self.goto(state, symbol)
+                    if len(new_state) == 0:      # the state goes nowhere with the symbol
                         continue
-                    if new_set not in automata:
-                        automata.append(new_set)
+                    if new_state not in automata:
+                        automata.append(new_state)
                         flag = True
         self.automata = automata
 
@@ -52,12 +52,13 @@ class Parser():
         for item in itemset:
             right = item.right
             index = right.index('.')
-            vars = len(right) - index - 1            # number of symbols after dot
-            if vars == 0:
+            var = len(right) - index - 1    # number of symbols after dot
+            if var == 0:
                 continue
-            symbol = right[index + 1]               # the first symbol after dot
+            symbol = right[index + 1]       # the first symbol after dot
             for p in self.productions:
-                if p.left == symbol:
+                if p.left != symbol:
+                    continue
                     # build a new item and calculate its lookahead symbol
                     # construct the right part by moving the dot one step backward
                     # two conditions for calculating the lookahead symbol
@@ -66,33 +67,32 @@ class Parser():
                     # otherwise, the new lookahead will be the first set of the right part of after dot
                     # e.g. for A -> B.CDEF, C -> GH
                     # new item: C -> .GH, lookahead(C) = first(DEF)
-                    if vars == 1:           # only one symbol after dot
-                        lookahead = item.lookahead
-                        if type(lookahead) is not list:
-                            lookahead = [lookahead]
-                    else:
-                        lookahead = []
-                        flag = True         # records whether all the symbols after dot are nullable
-                        for v in range(index + 2, index + vars + 1):
-                            sym = right[v]
-                            first = self.first_set[sym]
-                            for terminal in first:
-                                if terminal not in lookahead and terminal != '$':
-                                    lookahead.append(terminal)
-                            if '$' not in first:
-                                flag = False
-                                break
-                        if flag is True:    # then '#' could be met
-                            lookahead.append('#')
-                    new_right = ['.'] + p.right
-                    for terminal in lookahead:
-                        new_item = Item(p.left, new_right, terminal)
-                        if new_item not in itemset:
-                            itemset.append(new_item)
-
+                if var == 1:            # only one symbol after dot
+                    lookahead = item.lookahead
+                    if type(lookahead) is not list:
+                        lookahead = [lookahead]
+                else:
+                    lookahead = []
+                    flag = True         # records whether all the symbols after dot are nullable
+                    for v in range(index + 2, index + var + 1):
+                        terminal = right[v]
+                        first = self.first_set[terminal]
+                        for each in first:
+                            if each not in lookahead and each != '$':
+                                lookahead.append(each)
+                        if '$' not in first:
+                            flag = False
+                            break
+                    if flag is True:    # then '#' could be met
+                        lookahead.append('#')
+                new_right = ['.'] + p.right
+                for terminal in lookahead:
+                    new_item = Item(p.left, new_right, terminal)
+                    if new_item not in itemset:
+                        itemset.append(new_item)
         return itemset
 
-    def goto(self, itemset, symbol):        # 求出给定项目集对于符号X的转移状态
+    def goto(self, itemset, symbol):
         """
         Construct the transition state.
 
@@ -106,13 +106,13 @@ class Parser():
         for item in itemset:
             right = item.right
             index = right.index('.')
-            if index == len(right) - 1 or right[1] == '$':  # no symbol follows the dot or epsilon transition
+            if index == len(right) - 1 or right[1] == '$':     # no symbol follows the dot or epsilon transition
                 continue
             if right[index + 1] == symbol:
                 new_right = right.copy()
                 new_right[index], new_right[index + 1] = new_right[index + 1], new_right[index]
-                new_item = Item(item.left, new_right, item.lookahead)
-                new_state.append(new_item)
+                item = Item(item.left, new_right, item.lookahead)
+                new_state.append(item)
         new_state = self.closure(new_state)
         return new_state
 
@@ -136,13 +136,12 @@ class Parser():
                         if symbol == item.lookahead and item.left != self.start_symbol + "'":          # 纵坐标终结符恰好为展望符，归约
                             right = item.right.copy()
                             right.pop(right.index('.'))
-                            pindex = self.production_index(item.left, right)
-                            entry = Entry(i, symbol, 'r' + str(int(pindex) + 1))
+                            entry = Entry(i, symbol, action='r', left=item.left, right=right)
                             if not self.contains(action_table, entry):
                                 action_table.append(entry)
 
                         if item.left == self.start_symbol + "'":    # initial state, accept it
-                            entry = Entry(i, '#', 'acc')
+                            entry = Entry(i, '#', action='acc')
                             if not self.contains(action_table, entry):
                                 action_table.append(entry)
                         continue
@@ -150,8 +149,7 @@ class Parser():
                     if right[index + 1] == '$' and symbol == item.lookahead:
                         right = item.right.copy()
                         right.pop(right.index('.'))
-                        pindex = self.production_index(item.left, right)
-                        entry = Entry(i, symbol, 'r' + str(pindex + 1))
+                        entry = Entry(i, symbol, action='r', left=item.left, right=right)
                         if not self.contains(action_table, entry):
                             action_table.append(entry)
                         continue
@@ -162,7 +160,7 @@ class Parser():
                 if len(shiftable) != 0:
                     gotoState = self.goto(self.automata[i], symbol)
                     gotoIndex = self.stateIndex(gotoState)      # shift后应进入的状态
-                    entry = Entry(i, symbol, 's' + str(gotoIndex))
+                    entry = Entry(i, symbol, 's', shift_state=gotoIndex)
                     if not self.contains(action_table, entry):
                         action_table.append(entry)
 
@@ -171,7 +169,7 @@ class Parser():
                 gotoState = self.goto(self.automata[i], symbol)
                 gotoIndex = self.stateIndex(gotoState)
                 if gotoIndex != None:
-                    entry = Entry(i, symbol, gotoIndex)
+                    entry = Entry(i, symbol, goto_state=gotoIndex)
                     goto_table.append(entry)
         self.actionTable = action_table
         self.gotoTable = goto_table
@@ -208,73 +206,118 @@ class Parser():
     def findAction(self, state, symbol):
         for entry in self.actionTable:
             if int(entry.state) == state and entry.symbol == symbol:
-                return entry.content
+                # return entry.content
+                return entry.action, entry.content
 
     def findGoto(self, state, symbol):
         for entry in self.gotoTable:
             if int(entry.state) == state and entry.symbol == symbol:
-                return int(entry.content)
+                return int(entry.content['goto_state'])
 
     def parse(self, w):
         f = open('Analysis_Result.txt','w')
-        stateStack, symbolStack = [0], ['#']
-        w.append(['#', '-', '-'])
-        i = 0
-        step = 0
+
+        """ 初始化 """
+        w.append(['#', '-', '-', 'end'])
+        i, step, counter = 0, 0, 0
+        stateStack, symbolStack, forest, Slist, Dlist = [0], ['#'], [], [], []
+
         while True:
+            # print("parsing", w[i])
+            # 预处理，将数字和标识符替换为digit和IDN
             symbol = w[i][0]
             type = w[i][1]
             if type == 'digit' or type == 'IDN':
                 symbol = w[i][1]
-            elif type == 'delimiter' or type == 'OP':
-                symbol = w[i][0]
             f.write("Read symbol\t" + str(symbol) + '\n')
             top = stateStack[-1]
-            content = self.findAction(top, symbol)
-            if content == None:
+            action, content = self.findAction(top, symbol)
+
+            if action == None:  # 发生错误
                 print("Error at line", w[i][3], "no action")
                 f.write("Error at line\t" + str(w[0][3]) + "\tno action\n")
                 break
-            if content[0] == 's':
-                stateIndex = int(content[1:])
+
+            if action == 's':  # 采取移入
+                # stateIndex = int(content[1:])
+                stateIndex = content['shift_state']
                 stateStack.append(stateIndex)
                 symbolStack.append(symbol)
                 f.write("\t\tshift\t" + str(symbol) + "\tand push state\t" + str(stateIndex) + "\n")
+
+                # 构建新的树结点
+                t = TreeNode(name=w[i][0])
+                forest.append(t)
                 i += 1
-                if i == len(w):
-                    # 保持输入字符串的最右端是$，如果不够就给它补！
-                    w.append(['$', '-', '-'])
-            elif content[0] == 'r':
-                # 从状态栈中弹出|β|个符号
-                pindex = int(content[1:])
-                p = self.productions[pindex - 1]
-                length = len(p.right)
+
+            elif action == 'r':  # 采取归约
+                """ 获取归约采用的产生式 """
+                left = content['left']
+                right = content['right']
+                p = Production(left, right)
+
+                """ 特殊归约 """
+                if p.right[0] == '$':   # 用空产生式归约时，不弹出符号，只移入非终结符
+                    f.write("\t\treduce using the production\t" + str(p.left) + "->" + str(p.right) + "\n")
+                    symbolStack.append(p.left)
+                    state = self.findGoto(stateStack[-1], p.left)
+                    f.write("\t\tpush state\t" + str(state) + "\n")
+                    stateStack.append(state)
+                    f.write("\t\tState stack:\t" + str(stateStack) + "\n")
+                    f.write("\t\tSymbol stack:\t" + str(symbolStack) + "\n")
+
+                    """ 采取语法动作 """
+                    f.write("\t\tForest stack:\t" + str(forest) + "\n")
+
+                    continue
+
+                """ 正常归约 """
+                length = len(p.right)   # 从状态栈中弹出|β|个符号
                 stateStack = stateStack[0:len(stateStack) - length]
 
                 # 归约式左部替换符号栈的栈顶
                 symbolStack = symbolStack[0:len(symbolStack) - length]
                 symbolStack.append(p.left)
 
-                f.write("\t\treduce using the production\t" + str(p.left) +"\t"+ str(p.right) + "\n")
+                f.write("\t\treduce using the production\t" + str(p.left) +"->"+ str(p.right) + "\n")
+
                 # 将goto的状态压入状态栈
                 state = self.findGoto(stateStack[-1], p.left)
                 f.write("\t\tpush state\t" + str(state) + "\n")
                 stateStack.append(state)
 
-            elif content == 'acc':
+                """ 采取语法动作 """
+                children = forest[len(forest) - length:]
+                for l in range(length):
+                    forest.pop()
+                if len(p.right) == 1:
+                    parent = TreeNode(name=children[0].name)
+                else:
+                    parent = TreeNode(name='$'+str(counter), production=p)
+                    for child in children:
+                        parent.tuple.append(child.name)
+                    counter += 1
+                parent.children = children
+                forest.append(parent)
+                if p.left == 'S':
+                    Slist.append(parent)
+                elif p.left == 'D' and p.right != ['D', 'D']:
+                    Dlist.append(parent)
+
+            elif action == 'acc':  # 采取接受
                 print("Accept! Congratulations!")
                 f.write("Accept! Congratulations!\n")
                 break
-            else:
-                print("error: no choice")
-                f.write("error: no choice\n")
 
             f.write("\t\tState stack:\t" + str(stateStack) + "\n")
             f.write("\t\tSymbol stack:\t" + str(symbolStack) + "\n")
-            # self.restInput(w, i + 1)
+            f.write("\t\tForest stack:\t" + str(forest) + "\n")
             step += 1
+
+        # 完成语法分析
         print("Finished in", step, "steps")
         f.write("Finished in\t" + str(step) + "\tsteps\n")
+        self.root, self.Slist, self.Dlist = forest[0], Slist, Dlist
 
     def restInput(self, w, index):
         print("\t\tThe rest of input string:\t", end="")
@@ -289,7 +332,7 @@ class Parser():
                 return True
         return False
 
-    def production_index(self, left, right):
+    def proIndex(self, left, right):
         for p in self.productions:
             if p.left == left and p.right == right:
                 return p.index
@@ -301,20 +344,15 @@ class Parser():
                 continue
             flag = True
             for j in range(len(cur)):         # 每个item必须相同
-                if cur[j] == state[j]:
+                if cur[j].left == state[j].left \
+                        and cur[j].right == state[j].right \
+                        and cur[j].lookahead == state[j].lookahead:
                     continue
                 else:
                     flag = False
                     break
             if flag:
                 return i
-
-    def viewSet(self, itemset):         # 查看一个项目集下的所有项目
-        for item in itemset.items:
-            print(item.left, item.right, item.lookahead)
-
-    def viewItem(self, item):
-        print(item.left, item.right, item.lookahead)
 
     def viewStates(self, states):       # 查看自动机的所有状态，显示其蕴含的项目
         i = 0
@@ -323,14 +361,6 @@ class Parser():
             self.viewSet(state)
             i += 1
 
-    def viewTable(self):
-        print("Action table:")
-        for entry in self.actionTable:
-            print(entry.state, entry.symbol, entry.content)
-        print("Goto table:")
-        for entry in self.gotoTable:
-            print(entry.state, entry.symbol, entry.content)
-
     def configure(self, grammar):
         self.productions = grammar.productions
         self.start_symbol = grammar.startSym
@@ -338,31 +368,17 @@ class Parser():
         self.terminals = grammar.terminals
         self.first_set = grammar.firstSet
         self.followSet = grammar.followSet
-        self.readTable()
+        # self.readTable()
+
+        self.production_index = collections.defaultdict(dict)
+        for production in self.productions:
+            self.production_index[production.left] = {}
+        print(self.production_index)
 
     def updateParse(self, w):
         self.build_automata()
+        # self.viewStates(self.states)
         self.buildTable()
         self.outputTable()
         self.parse(w)
-
-if __name__ == "__main__":
-    lexer = Lexer()
-    lexer.configure('source.txt')
-
-    g = Grammar()
-    g.configure('MyGrammar.txt')
-
-    print("Building automata...")
-    t1 = time.time()
-    p = Parser()
-    p.configure(g)
-    print("Analysis table completed in", '{:.4f}s'.format(time.time() - t1))
-
-    print("Parsing...")
-    t2 = time.time()
-    # p.parse(lexer.output)
-    p.updateParse(lexer.output)
-    print("Syntactic analysis completed in", '{:.4f}s'.format(time.time() - t2))
-
 

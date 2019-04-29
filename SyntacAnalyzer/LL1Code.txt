@@ -1,0 +1,11 @@
+int x 
+int y 
+double z 
+int a 
+int b
+x = y + z
+while ( a < b )
+	if ( c < d )
+		x = y + z
+	else
+		y = x + x

@@ -1,11 +1,11 @@
 0	class	s3
-1	$	acc
+1	#	acc
 2	class	s3
-2	$	r1
+2	#	r1
 3	IDN	s5
 4	class	r2
 4	class	s3
-4	$	r2
+4	#	r2
 5	{	s6
 6	public	s13
 6	private	s14
@@ -147,7 +147,7 @@
 32	void	s30
 33	IDN	s60
 34	class	r3
-34	$	r3
+34	#	r3
 35	IDN	s45
 35	public	r6
 35	private	r6
@@ -259,7 +259,7 @@
 55	(	s93
 56	]	s94
 57	class	r4
-57	$	r4
+57	#	r4
 58	IDN	s61
 59	IDN	s95
 60	(	s96

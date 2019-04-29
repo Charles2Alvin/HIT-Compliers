@@ -18,6 +18,12 @@ class Item():
         self.right = right
         self.lookahead = lookahead
 
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.left == other.left and self.right == other.right and self.lookahead == other.lookahead
+        else:
+            return False
+
 
 class ItemSet():
     def __init__(self):
